@@ -1,5 +1,7 @@
 package cc;
 
+import java.util.ArrayList;
+
 public class LinkedList {
     Node head;
     Node tail;
@@ -7,7 +9,7 @@ public class LinkedList {
 //    public void add(int val){
 //        Node<Integer> head = new Node<>(val,val );
 //    }
-    public void insert(int value){
+    public String insert(int value){
         Node node = new Node(value);
         if(head == null){
             head = node;
@@ -17,7 +19,9 @@ public class LinkedList {
             tail.next = node;
             tail = node;
         }
+        return "Value Added";
     }
+
     public boolean includes(int value){
         boolean includeOrNot = false;
         Node current = head;
@@ -43,6 +47,18 @@ public class LinkedList {
         }
        // System.out.println(head);
         return list;
+    }
+
+    public ArrayList<Integer> getValues(){
+        ArrayList<Integer> vals = new ArrayList<Integer>();
+        Node current = head;
+        while(current != null){
+            vals.add(current.data);
+            current = current.next;
+        }
+
+        //System.out.println(vals);
+        return vals;
     }
 //    public void insertFirst(int val){
 //        Node newNode = new Node(val);
