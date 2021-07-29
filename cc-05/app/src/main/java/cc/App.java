@@ -3,12 +3,29 @@
  */
 package cc;
 
+import com.sun.jdi.Value;
+
 public class App {
     public String getGreeting() {
         return "Hello From Code Challenge 05";
     }
 
     public static void main(String[] args) {
+
         System.out.println(new App().getGreeting());
+
+        LinkedList list = new LinkedList();
+        list.insert(5);
+        list.insert(15);
+        list.insert(15);
+        list.insert(15);
+        list.insert(80);
+        list.insert(14);
+        list.insert(4);
+        System.out.println(list.includes(14));
+        System.out.println(list.includes(5));
+        System.out.println(list.includes(52));
+        System.out.println(list.getAsString());
     }
+
 }

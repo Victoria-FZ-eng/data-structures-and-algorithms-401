@@ -16,6 +16,6 @@ public class Node {
     Node next;
 
     public Node(int value) {
-
+       data=value;
     }
 }

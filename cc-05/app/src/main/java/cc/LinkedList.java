@@ -8,20 +8,21 @@ public class LinkedList {
 //        Node<Integer> head = new Node<>(val,val );
 //    }
     public void insert(int value){
+        Node node = new Node(value);
         if(head == null){
-            head = new Node(value);
+            head = node;
             tail = head;
         }
         else{
-            tail.next = new Node(value);
-            tail = new Node(value);
+            tail.next = node;
+            tail = node;
         }
     }
     public boolean includes(int value){
         boolean includeOrNot = false;
         Node current = head;
         while(current.next != null){
-            if(current.equals(value)){
+            if(value == (current.data)){
                 includeOrNot = true;
             }
             current = current.next;
@@ -32,12 +33,15 @@ public class LinkedList {
     public String getAsString(){
         String list = "";
         Node current = head;
+
         while(current != null){
-            list = list + "{ " + current + " }" + " -> ";
+            list = list + "{ " + current.data + " }" + " -> ";
+            current = current.next;
         }
         if (current == null){
             list = list + "NULL";
         }
+       // System.out.println(head);
         return list;
     }
 //    public void insertFirst(int val){
