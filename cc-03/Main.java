@@ -20,13 +20,13 @@ public class Main{
         boolean flagex=false;
         while(! flagex){
             if(min>max){
-                System.out.println(-1);
+                System.out.println(-1 + "  NOT FOUND");
                 break;
             }
             mid=(max+min)/2;
             trial++;
             if(arr[mid]==num){
-                System.out.println(mid);
+                System.out.println("Index: "+mid+ " Element: " + arr[mid]);
                // System.out.println("trial: "+trial);
                 break;
             }else if(arr[mid]<num){
