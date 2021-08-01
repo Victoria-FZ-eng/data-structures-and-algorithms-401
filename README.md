@@ -10,3 +10,4 @@ Table of Contents
 |array-binary-search| [cc-03](cc-03/read03.md)|
 |Interview Practice| [cc-04](cc-04/read04.md)|
 |linked-list | [cc-05](cc-05/read05.md) |
+|linked-list-2 | [cc-06](cc-06/read06.md) |
