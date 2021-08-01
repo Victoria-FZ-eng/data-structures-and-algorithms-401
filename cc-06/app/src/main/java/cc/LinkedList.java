@@ -78,7 +78,6 @@ public class LinkedList {
             current=current.next;
         }
 
-
     }
 /*            if(current.data == value){
                 node.next=current;

@@ -3,10 +3,13 @@
  */
 package cc;
 
+import java.util.ArrayList;
+
 public class App {
     public String getGreeting() {
         return "Hello From Code Challenge 06";
     }
+
 
     public static void main(String[] args) {
 
@@ -21,7 +24,53 @@ public class App {
 
         list.insertAfter(15,18);
         list.insertBefore(2,9);
-        System.out.println(list.viewList());
+       // System.out.println(list.viewList());
+
+        appending(6);
+        appendingMult(6,8,25);
+        addBefore(15,80);
+        addAfter(15,80);
+        System.out.println( addAfter(15,80));
+
 
     }
+
+    public static ArrayList<Integer> appending(int x){
+        LinkedList list = new LinkedList();
+        list.append(x);
+
+        return list.viewList();
+    }
+    public static ArrayList<Integer> appendingMult(int x, int y , int z){
+        LinkedList list = new LinkedList();
+        list.append(x);
+        list.append(y);
+        list.append(z);
+
+        return list.viewList();
+    }
+    public static ArrayList<Integer> addBefore(int val, int valToAdd){
+    LinkedList list = new LinkedList();
+        list.append(45);
+        list.append(75);
+        list.append(69);
+        list.append(21);
+        list.append(36);
+        list.insertBefore(val,valToAdd);
+
+        return list.viewList();
+    }
+
+    public static ArrayList<Integer> addAfter(int val, int valToAdd){
+         LinkedList list = new LinkedList();
+        list.append(45);
+        list.append(75);
+        list.append(69);
+        list.append(21);
+        list.append(36);
+        list.insertAfter(val,valToAdd);
+
+        return list.viewList();
+    }
+
 }
