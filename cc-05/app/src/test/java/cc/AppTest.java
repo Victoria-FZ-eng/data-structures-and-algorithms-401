@@ -17,14 +17,14 @@ public class AppTest {
     }
 
     @Test public void testInsertandCollection(){
-        assertEquals("[10, 20, 30]", String.valueOf(App.toTestInsert(10,20,30)));
+        assertEquals("[30, 20, 10]", String.valueOf(App.toTestInsert(10,20,30)));
     }
     @Test public void testCreationOfLinkedList(){
         assertEquals("[]", String.valueOf(App.toTestEmpty()));
     }
     @Test public void testHead(){
-        assertEquals("10", String.valueOf(App.checkHead(10,20,30)));
-        assertEquals(10, App.checkHead(10,20,30));
+        assertEquals("30", String.valueOf(App.checkHead(10,20,30)));
+        assertEquals(30, App.checkHead(10,20,30));
     }
     @Test public void testInsertOne(){
         assertEquals("[3]", String.valueOf(App.toTestInsertOne(3)));

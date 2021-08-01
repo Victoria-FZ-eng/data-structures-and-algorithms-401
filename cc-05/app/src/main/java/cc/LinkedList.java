@@ -10,16 +10,29 @@ public class LinkedList {
 //        Node<Integer> head = new Node<>(val,val );
 //    }
     public String insert(int value){
+
         Node node = new Node(value);
         if(head == null){
             head = node;
-            tail = head;
+            //tail = head;
         }
         else{
-            tail.next = node;
-            tail = node;
+            node.next = head;
+            head = node;
         }
         return "Value Added";
+
+        // add Node to the end
+//        Node node = new Node(value);
+//        if(head == null){
+//            head = node;
+//            tail = head;
+//        }
+//        else{
+//            tail.next = node;
+//            tail = node;
+//        }
+//        return "Value Added";
     }
 
     public boolean includes(int value){
