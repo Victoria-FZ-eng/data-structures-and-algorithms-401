@@ -5,10 +5,23 @@ package cc;
 
 public class App {
     public String getGreeting() {
-        return "Hello World!";
+        return "Hello From Code Challenge 06";
     }
 
     public static void main(String[] args) {
+
         System.out.println(new App().getGreeting());
+
+        LinkedList list = new LinkedList();
+        list.append(5);
+        list.append(7);
+        list.append(15);
+        list.append(2);
+        list.append(63);
+
+        list.insertAfter(15,18);
+        list.insertBefore(2,9);
+        System.out.println(list.viewList());
+
     }
 }
