@@ -13,6 +13,8 @@ create methods in linkedList class to create the list , insert nodes , and check
 4- call them from the App.java 
 5- test each method
 
+Big(O) = O(n) for space and time
+
 ## API
 1- the insert method:
 takes in an integer , if the list is empty then create list and the integer would be the head, if not , just add the integer at the first of the nodes.
