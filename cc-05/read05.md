@@ -15,7 +15,7 @@ create methods in linkedList class to create the list , insert nodes , and check
 
 ## API
 1- the insert method:
-takes in an integer , if the list is empty then create list and the integer would be the head, if not , just add the integer as the next node.
+takes in an integer , if the list is empty then create list and the integer would be the head, if not , just add the integer at the first of the nodes.
 2- the include method
 takes in an integer , and test if the integer value exist as node data ;return true if not return false.
 3- the sting method
