@@ -5,7 +5,7 @@ package cc;
 
 public class App {
     public String getGreeting() {
-        return "Hello World!";
+        return "Hello from Code Challenge 07";
     }
 
     public static void main(String[] args) {
