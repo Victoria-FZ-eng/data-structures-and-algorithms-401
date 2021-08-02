@@ -3,7 +3,7 @@ Using the previous methods of code challenges (Linked-List), generate a method t
 
 ## Whiteboard Process
 
-![whiteboard](./cc-07.png)
+![whiteboard](./linked-list-kth.png)
 
 ## Approach & Efficiency
 I used the previous methods , and the Lists method(reverse), so k would be the index.
