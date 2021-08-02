@@ -9,6 +9,19 @@ public class App {
     }
 
     public static void main(String[] args) {
+
         System.out.println(new App().getGreeting());
+
+        LinkedList list = new LinkedList();
+        list.append(4);
+        list.append(6);
+        list.append(8);
+        list.append(9);
+
+        System.out.println(list.getValues());
+        System.out.println(list.kthFromEnd(2));
+
     }
+
+    //public static void showKth(int k )throws IndexOutOfBoundsException{}
 }
