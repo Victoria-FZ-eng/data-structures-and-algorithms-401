@@ -2,7 +2,8 @@
 Using the previous methods of code challenges (Linked-List), generate a method that accepts an integer k and returns Return the node’s value that is k places from the tail of the linked-list.
 
 ## Whiteboard Process
-<!-- Embedded whiteboard image -->
+
+![whiteboard](./cc-07.png)
 
 ## Approach & Efficiency
 I used the previous methods , and the Lists method(reverse), so k would be the index.
