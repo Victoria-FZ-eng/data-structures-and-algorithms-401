@@ -20,8 +20,10 @@ public class App {
 
         System.out.println(list.getValues());
         System.out.println(list.kthFromEnd(2));
+        kthFromE(list,2);
 
     }
-
-    //public static void showKth(int k )throws IndexOutOfBoundsException{}
+    public static int kthFromE(LinkedList l , int k){
+        return l.kthFromEnd(k);
+    }
 }

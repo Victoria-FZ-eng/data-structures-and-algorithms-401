@@ -121,30 +121,22 @@ public class LinkedList {
         return list;
     }
 
-    // The above methods are from previous code challenges
-    // Bellow is from Code Challenge 07
+     // The above methods are from previous code challenges
+//--------------------------------------------------------------------------------------------------------------------
+//------------------------------------------------------------------------------------------------------------------------
+    // Bellow is for Code Challenge 07
 
     public int kthFromEnd(int k) {
 // indexOf(Object o) — Searches the list for the specified Object and returns its position in the list. Throws an exception if the object passed into the method is not in the list.
         List<Integer> nodesArrRev = Lists.reverse(getValues()) ;
-
+        // throw new IndexOutOfBoundsException();
         try{
-//            if (!(k < 0 && k > nodesArrRev.size() )){
-//              //  System.out.println("Error, k shouldn't be negative number & more than the nodes' list size");
-//               // throw new IndexOutOfBoundsException();
             nodesArrRev.get(k);
-
         }catch (IndexOutOfBoundsException e){
-            System.out.println("Error, k shouldn't be negative number & more than the nodes' list size");
-          //  throw new IndexOutOfBoundsException();
+            System.out.println("Error, k shouldn't be negative number or more than the nodes' list size");
+            e.hashCode();
             e.printStackTrace();
         }
-
-//        if (k < 0 && k >= nodesArrRev.size() ){
-//            System.out.println("Error, k shouldn't be negative number & more than the nodes' list size");
-//            throw new IndexOutOfBoundsException();
-//        }
-        System.out.println(nodesArrRev.get(k));
         return nodesArrRev.get(k);
     }
 
