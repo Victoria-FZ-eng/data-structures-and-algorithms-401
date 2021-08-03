@@ -7,14 +7,21 @@ Create a linkedList and Node classes (Implementation).
 create methods in linkedList class to create the list , insert nodes , and check if a certain node is included, and one more method to return the whole list in an organized string.
 
 ## Approach & Efficiency
+
 1- create the Node.java 
+
 2- create LinkedList. java
+
 3- create the methods
+
 4- call them from the App.java 
+
 5- test each method
 
 Method getAsString -->Big(O) = O(n) for space and time
-Method includes -->Big(O) = O(n) for space and time
+
+Method includes -->Big(O) = O(n) for space and 
+
 Method insert -->Big(O) = O(1) for  and O(n) for space
 
 ## API
