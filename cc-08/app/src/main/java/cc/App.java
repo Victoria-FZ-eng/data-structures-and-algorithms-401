@@ -3,12 +3,77 @@
  */
 package cc;
 
+import java.util.ArrayList;
+
 public class App {
     public String getGreeting() {
-        return "Hello World!";
+        return "Hello from Code Challenge 08";
     }
 
     public static void main(String[] args) {
+
         System.out.println(new App().getGreeting());
+
+        LinkedList list01 = new LinkedList();
+        LinkedList list02 = new LinkedList();
+        list01.append(1);
+        list01.append(3);
+        list01.append(5);
+//        list01.append(7);
+//        list01.append(9);
+
+        list02.append(2);
+        list02.append(4);
+        list02.append(6);
+        list02.append(8);
+        list02.append(10);
+
+        System.out.println(zipLists(list01,list02));
     }
+
+
+    public static String zipLists(LinkedList l1, LinkedList l2){
+
+        ArrayList<Integer> list01 = l1.getValues();
+        ArrayList<Integer> list02 = l2.getValues();
+        ArrayList<Integer> zipped = new ArrayList<Integer>();
+
+        if (list01.size() == list02.size()){
+            for (int i =0 ;i < list01.size()*2 ; i++){
+                if(i%2 ==0){
+                    zipped.add(list01.get(i/2));
+                }else if(i%2 !=0){
+                    zipped.add(list02.get(i/2));
+                }
+            }
+        } else if (list01.size() > list02.size()){
+            for (int i =0 ;i < list02.size()*2 ; i++){
+                if(i%2 ==0){
+                    zipped.add(list01.get(i/2));
+                }else if(i%2 !=0){
+                    zipped.add(list02.get(i/2));
+                }
+            }
+            for (int j = list01.size()-list02.size()+1; j < list01.size(); j++) {
+                zipped.add(list01.get(j));
+            }
+        }else if (list01.size() < list02.size()){
+            for (int i =0 ;i < list01.size()*2 ; i++){
+                if(i%2 ==0){
+                    zipped.add(list01.get(i/2));
+                }else if(i%2 !=0){
+                    zipped.add(list02.get(i/2));
+                }
+            }
+            for (int j = list02.size()-list01.size()+1; j < list02.size(); j++) {
+                zipped.add(list02.get(j));
+            }
+        }
+        LinkedList newList = new LinkedList();
+        for (Integer integer : zipped) {
+            newList.append(integer);
+        }
+        return newList.getAsString();
+    }
+
 }

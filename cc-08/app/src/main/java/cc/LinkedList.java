@@ -35,9 +35,26 @@ public class LinkedList {
         return vals;
     }
 
+    // getting nodes in shaped
+    public String getAsString(){
+        String list = "";
+        Node current = head;
+
+        while(current != null){
+            list = list + "{ " + current.data + " }" + " -> ";
+            current = current.next;
+        }
+        if (current == null){
+            list = list + "NULL";
+        }
+        // System.out.println(head);
+        return list;
+    }
+
     //---------------------------------------------------------------------------------------
     // below is the method for code challenge 08
     //---------------------------------------------------------------------------------------
 
-    
+
+
 }
