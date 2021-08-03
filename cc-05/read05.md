@@ -13,7 +13,9 @@ create methods in linkedList class to create the list , insert nodes , and check
 4- call them from the App.java 
 5- test each method
 
-Big(O) = O(n) for space and time
+Method getAsString -->Big(O) = O(n) for space and time
+Method includes -->Big(O) = O(n) for space and time
+Method insert -->Big(O) = O(1) for  and O(n) for space
 
 ## API
 1- the insert method:
