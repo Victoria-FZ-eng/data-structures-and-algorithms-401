@@ -19,11 +19,6 @@ public class LinkedList {
         return "Value Added";
     }
 
-    public void addFirst(int value){
-        Node tmp = head;
-        head.data=value;
-        head.next=tmp;
-    }
 
     public void insertBefore(int value, int valueToAdd){
 
