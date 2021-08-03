@@ -12,3 +12,4 @@ Table of Contents
 |linked-list | [cc-05](cc-05/read05.md) |
 |linked-list-2 | [cc-06](cc-06/read06.md) |
 |linked-list-kth | [cc-07](cc-07/read07.md) |
+|linked-list-zip | [cc-08](cc-08/read08.md) |
