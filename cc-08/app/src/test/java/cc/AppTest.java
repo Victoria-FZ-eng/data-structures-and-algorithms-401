@@ -11,4 +11,41 @@ class AppTest {
         App classUnderTest = new App();
         assertNotNull(classUnderTest.getGreeting(), "app should have a greeting");
     }
+    @Test void testZippingMethodCase01() {
+        LinkedList list01 = new LinkedList();
+        list01.append(1);
+        list01.append(3);
+        list01.append(5);
+        LinkedList list02 = new LinkedList();
+        list02.append(2);
+        list02.append(4);
+        list02.append(6);
+        assertEquals("{ 1 } -> { 2 } -> { 3 } -> { 4 } -> { 5 } -> { 6 } -> NULL", App.zipLists(list01,list02));
+    }
+    @Test void testZippingMethodCase02() {
+        LinkedList list01 = new LinkedList();
+        list01.append(1);
+        list01.append(3);
+        list01.append(5);
+        list01.append(7);
+        list01.append(9);
+        LinkedList list02 = new LinkedList();
+        list02.append(2);
+        list02.append(4);
+        list02.append(6);
+        assertEquals("{ 1 } -> { 2 } -> { 3 } -> { 4 } -> { 5 } -> { 6 } -> { 7 } -> { 9 } -> NULL", App.zipLists(list01,list02));
+    }
+    @Test void testZippingMethodCase03() {
+        LinkedList list01 = new LinkedList();
+        list01.append(1);
+        list01.append(3);
+        list01.append(5);
+        LinkedList list02 = new LinkedList();
+        list02.append(2);
+        list02.append(4);
+        list02.append(6);
+        list02.append(8);
+        list02.append(10);
+        assertEquals("{ 1 } -> { 2 } -> { 3 } -> { 4 } -> { 5 } -> { 6 } -> { 8 } -> { 10 } -> NULL", App.zipLists(list01,list02));
+    }
 }

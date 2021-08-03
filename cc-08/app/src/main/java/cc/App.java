@@ -25,8 +25,8 @@ public class App {
         list02.append(2);
         list02.append(4);
         list02.append(6);
-        list02.append(8);
-        list02.append(10);
+//        list02.append(8);
+//        list02.append(10);
 
         System.out.println(zipLists(list01,list02));
     }
