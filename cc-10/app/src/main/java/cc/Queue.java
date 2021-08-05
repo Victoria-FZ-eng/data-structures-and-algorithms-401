@@ -17,7 +17,7 @@ public class Queue<T> {
             Node<T> neww = new Node(value);
             rear.next = neww;
             rear = neww;
-            queueArr.add(front.data);
+            queueArr.add(rear.data);
         }
         return "Queues: "+queueArr;
     }
@@ -25,6 +25,7 @@ public class Queue<T> {
     public T  dequeue() throws Exception{
         T value = null;
         if (front == null){
+            System.out.println("ERROR: can not dequeue, Queue is empty");
             throw new Exception();
         }else{
           value = front.data;
@@ -32,5 +33,24 @@ public class Queue<T> {
             queueArr.remove(0);
         }
         return value;
+    }
+    public T peak() throws Exception {
+        T value = null;
+        if (front == null){
+            System.out.println("ERROR: can not peak, queue is empty");
+            throw  new Exception();
+        } else{
+            value = front.data;
+        }
+        return value;
+    }
+    public boolean isEmpty(){
+        boolean notEmpty = false;
+        if (front ==null){
+            notEmpty = false;
+        }else{
+            notEmpty=true;
+        }
+        return notEmpty;
     }
 }

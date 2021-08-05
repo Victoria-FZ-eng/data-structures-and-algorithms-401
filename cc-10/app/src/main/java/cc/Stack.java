@@ -38,6 +38,7 @@ public class Stack<T> {
 //        return value;
         T value = null;
         if (top == null){
+            System.out.println("ERROR: can not pop, stack is empty");
             throw  new Exception();
         } else{
             value = top.data;
@@ -50,6 +51,7 @@ public class Stack<T> {
     public T peak() throws Exception {
         T value = null;
         if (top == null){
+            System.out.println("ERROR: can not peak, stack is empty");
             throw  new Exception();
         } else{
             value = top.data;
@@ -59,8 +61,10 @@ public class Stack<T> {
 
     public boolean isEmpty(){
         boolean notEmpty = false;
-        if (top !=null){
-            notEmpty = true;
+        if (top ==null){
+            notEmpty = false;
+        }else{
+            notEmpty=true;
         }
         return notEmpty;
     }
