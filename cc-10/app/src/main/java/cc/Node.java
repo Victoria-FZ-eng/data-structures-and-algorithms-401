@@ -1,14 +1,15 @@
 package cc;
 
-public class Node {
+public class Node<T> {
 
-    int data;
-    Node next;
+    public T data;
+    Node<T> next;
     // Node previous;
 
 
-    public Node(int value) {
-        data=value;
+    public Node(T value) {
+
+        data = value;
     }
 
 }
