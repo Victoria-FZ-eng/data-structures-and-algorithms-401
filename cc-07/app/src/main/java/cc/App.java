@@ -20,7 +20,7 @@ public class App {
 
         System.out.println(list.getValues());
         System.out.println(list.kthFromEnd(2));
-        kthFromE(list,2);
+        kthFromE(list,17);
 
     }
     public static int kthFromE(LinkedList l , int k){
