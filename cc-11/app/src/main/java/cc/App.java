@@ -15,16 +15,19 @@ public class App {
         pseudoQueue.enqueue(1);
         pseudoQueue.enqueue(2);
         pseudoQueue.enqueue(3);
-        System.out.println(enQ(pseudoQueue,4));
-        System.out.println(deQ(pseudoQueue));
-        pseudoQueue.displayQueue();
-        System.out.println(pseudoQueue.displayQueue());
+        System.out.println("EnQueue: "+enQ(pseudoQueue,4));
+        System.out.println("DeQueue: "+deQ(pseudoQueue));
+      //  System.out.println(pseudoQueue.dequeue());
+      //  System.out.println(pseudoQueue.dequeue());
+       // System.out.println(pseudoQueue.dequeue());
+       // System.out.println(pseudoQueue.dequeue());
+
+        System.out.println("Displaying Queue: "+pseudoQueue.displayQueue());
 
     }
 
     public static String enQ(PseudoQueue pq, int num){
        pq.enqueue(num);
-        System.out.println(pq.displayQueue());
        return pq.displayQueue();
     }
 

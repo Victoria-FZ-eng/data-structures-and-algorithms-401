@@ -26,7 +26,7 @@ public class PseudoQueue<T> {
 
     public String  dequeue() throws Exception{
         T value = null;
-        if (front == null){
+        if (size ==0){
             System.out.println("ERROR: can not dequeue, Queue is empty");
             throw new Exception();
         }else{
@@ -37,14 +37,10 @@ public class PseudoQueue<T> {
               //  System.out.println("from for "+current.data);
                 current=current.next;
             }
-//            while(current.next != null){
-//                System.out.println("here: "+current.data);
-//                current=current.next;
-//            }
-
             //System.out.println("this "+current.data);
             rear= current;
             current.next=null;
+            size--;
 
         }
         return value.toString();
