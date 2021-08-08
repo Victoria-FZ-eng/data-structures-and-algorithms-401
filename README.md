@@ -15,3 +15,4 @@ Table of Contents
 |linked-list-zip | [cc-08](cc-08/read08.md) |
 |Interview Practice | [cc-09](cc-09/read09.md) | 
 |Stack-and-Queue | [cc-10](cc-10/read10.md) |
+|stack-queue-pseudo | [cc-11](cc-11/read11.md) |
