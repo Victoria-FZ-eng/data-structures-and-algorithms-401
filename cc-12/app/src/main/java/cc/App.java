@@ -5,10 +5,48 @@ package cc;
 
 public class App {
     public String getGreeting() {
-        return "Hello World!";
+        return "Hello From Code Challenge 12";
     }
 
     public static void main(String[] args) {
         System.out.println(new App().getGreeting());
+
+        AnimalShelter s = new AnimalShelter();
+
+        Animal bird = new Animal("bird");
+        Cat c = new Cat();
+        Dog d = new Dog();
+        Animal bird2 = new Animal("bird");
+        Animal cat = new Cat();
+
+        System.out.println(s.enqueue(bird));
+        System.out.println(s.enqueue(c));
+        System.out.println(s.enqueue(d));
+        System.out.println(s.enqueue(bird2));
+        System.out.println(s.enqueue(cat));
+
+        try {
+            System.out.println(s.dequeue("bird"));
+        } catch (Exception e) {
+            System.out.println(" ");
+        }
+
+        try {
+            System.out.println(s.dequeue("dog"));
+        } catch (Exception e) {
+            System.out.println(" ");
+        }
+
+        try {
+            System.out.println(s.dequeue("dog"));
+        } catch (Exception e) {
+            System.out.println(" ");
+        }
+
+
+        Animal cat4 = new Animal("cat");
+
+        System.out.println(s.enqueue(cat4));
     }
+
 }
