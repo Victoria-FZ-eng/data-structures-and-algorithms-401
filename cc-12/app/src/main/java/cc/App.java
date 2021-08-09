@@ -50,3 +50,4 @@ public class App {
     }
 
 }
+// for the strtech goal, in each queue, the front value, and for both queues use Date object.
