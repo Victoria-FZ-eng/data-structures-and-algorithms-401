@@ -8,7 +8,7 @@ public class App {
         return "Hello From Code Challenge 12";
     }
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws Exception {
         System.out.println(new App().getGreeting());
 
         AnimalShelter s = new AnimalShelter();
@@ -19,34 +19,45 @@ public class App {
         Animal bird2 = new Animal("bird");
         Animal cat = new Cat();
 
-        System.out.println(s.enqueue(bird));
-        System.out.println(s.enqueue(c));
-        System.out.println(s.enqueue(d));
-        System.out.println(s.enqueue(bird2));
-        System.out.println(s.enqueue(cat));
+//        System.out.println(s.enqueue(bird));
+//        System.out.println(s.enqueue(c));
+//        System.out.println(s.enqueue(d));
+//        System.out.println(s.enqueue(bird2));
+//        System.out.println(s.enqueue(cat));
+//
+//        try {
+//            System.out.println(s.dequeue("bird"));
+//        } catch (Exception e) {
+//            System.out.println(" ");
+//        }
+//
+//        try {
+//            System.out.println(s.dequeue("dog"));
+//        } catch (Exception e) {
+//            System.out.println(" ");
+//        }
+//
+//        try {
+//            System.out.println(s.dequeue("dog"));
+//        } catch (Exception e) {
+//            System.out.println(" ");
+//        }
+//
+//
+//        Animal cat4 = new Animal("cat");
+//
+//        System.out.println(s.enqueue(cat4));
+        System.out.println(adding(s,c));
+        System.out.println(givingAway(s,"dog"));
+    }
 
-        try {
-            System.out.println(s.dequeue("bird"));
-        } catch (Exception e) {
-            System.out.println(" ");
-        }
+    public static String adding(AnimalShelter s,Animal a){
 
-        try {
-            System.out.println(s.dequeue("dog"));
-        } catch (Exception e) {
-            System.out.println(" ");
-        }
+        return s.enqueue(a);
+    }
+    public static String givingAway(AnimalShelter s,String pref) throws Exception {
 
-        try {
-            System.out.println(s.dequeue("dog"));
-        } catch (Exception e) {
-            System.out.println(" ");
-        }
-
-
-        Animal cat4 = new Animal("cat");
-
-        System.out.println(s.enqueue(cat4));
+        return String.valueOf(s.dequeue(pref));
     }
 
 }
