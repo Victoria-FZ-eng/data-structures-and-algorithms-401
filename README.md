@@ -17,3 +17,4 @@ Table of Contents
 |Stack-and-Queue | [cc-10](cc-10/read10.md) |
 |stack-queue-pseudo | [cc-11](cc-11/read11.md) |
 |stack-queue-animal-shelter | [cc-12](cc-12/read12.md) |
+|stack-queue-brackets | [cc-13](cc-13/read13.md) |
