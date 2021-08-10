@@ -19,6 +19,7 @@ public class App {
         }
     }
 
+    // Using ArrayDeque is another way to solve this challenge
     public static boolean validateBrackets(String s) {
 
         Stack<Character> stack = new Stack<>();
@@ -39,7 +40,6 @@ public class App {
                 return false;
             }
         }
-        System.out.println(stack.stackArr);
 
         return !stack.isEmpty();
     }

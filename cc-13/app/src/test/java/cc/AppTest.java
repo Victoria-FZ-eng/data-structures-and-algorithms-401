@@ -11,4 +11,12 @@ class AppTest {
         App classUnderTest = new App();
         assertNotNull(classUnderTest.getGreeting(), "app should have a greeting");
     }
+    @Test void testBracketsMethod(){
+
+        assertTrue(App.validateBrackets("(){hello}({})"));
+        assertTrue(App.validateBrackets("([{}])"));
+        assertFalse(App.validateBrackets("}{"));
+        assertFalse(App.validateBrackets("{(})"));
+        assertFalse(App.validateBrackets("{]"));
+    }
 }
