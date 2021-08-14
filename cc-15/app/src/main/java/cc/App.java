@@ -50,6 +50,10 @@ public class App {
 
 
     }
+    public static String empty(){
+        BinaryTree tree= new BinaryTree<>();
+        return "Empty Tree";
+    }
 
     public static String  add(int value) throws Exception {
         BinarySearchTree biTree = new BinarySearchTree();
