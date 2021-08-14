@@ -18,15 +18,25 @@ public class BinarySearchTree extends BinaryTree{
             }
         }
     }
-
+    boolean contain = false;
     public boolean contains(int value, Node<Integer> rootNode){
-        boolean contain = false;
-        if (value == rootNode.data ||value == rootNode.left.data || value == rootNode.right.data ){
+        root= rootNode;
+        if (value == rootNode.data ){
+           contain= true;
            return true;
         }else if(value < rootNode.data){
-            contains(value, rootNode.left);
+            try {
+                contains(value, rootNode.left);
+            }catch(Exception e){
+                System.out.println("null");
+            }
+
         }else if (value > rootNode.data){
-            contains(value, rootNode.right);
+            try {
+                contains(value, rootNode.right);
+            }catch(Exception e){
+                System.out.println("null");
+            }
         }
         return contain;
     }

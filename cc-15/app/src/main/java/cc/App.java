@@ -39,7 +39,7 @@ public class App {
         System.out.println(biTree.preOrder(root));
         System.out.println(biTree.inOrder(root));
         System.out.println(biTree.postOrder(root));
-        System.out.println(biTree.contains(23,root));
+        System.out.println(biTree.contains(5,root));
 
 
 
