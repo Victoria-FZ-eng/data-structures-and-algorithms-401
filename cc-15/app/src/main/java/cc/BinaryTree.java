@@ -6,7 +6,10 @@ import java.util.ArrayList;
 public class BinaryTree<T> {
 
     Node<T> root;
-    ArrayList<Node> treeList = new ArrayList<Node>();
+
+    static ArrayList<Object> preOrderList = new ArrayList<>();
+    static ArrayList<Object> inOrderList = new ArrayList<>();
+    static ArrayList<Object> postOrderList = new ArrayList<>();
 
 
     BinaryTree()
@@ -18,28 +21,7 @@ public class BinaryTree<T> {
     }
 
 
-    public void treeAdd(T value,Node<T> rootNode){
-            root= rootNode;
-            treeList.add(root);
-            if(root.left == null){
-                root.left =new Node<T> (value);
-                treeList.add(root.left);
-            }else if (root.right == null){
-                root.right= new Node<>(value);
-                treeList.add(root.right);
-            }else if(root.left !=null && root.right != null){
-                treeAdd(value,root.left);
-            }
-    }
-
-
-    static ArrayList<Object> preOrderList = new ArrayList<>();
-    static ArrayList<Object> inOrderList = new ArrayList<>();
-    static ArrayList<Object> postOrderList = new ArrayList<>();
-
-
-
-    public ArrayList<Object> preOrder(Node<T> root) {
+    public ArrayList<Object> preOrder(Node<T> root) throws Exception {
 
         if (root != null) {
             preOrderList.add(root.data);
@@ -52,10 +34,11 @@ public class BinaryTree<T> {
             }
         }else{
             System.out.println("Root is Null");
+            throw new Exception();
         }
         return preOrderList;
     }
-    public static ArrayList<Object> inOrder (Node root){
+    public ArrayList<Object> inOrder (Node root) throws Exception {
 
         if (root != null){
             if(root.left !=null){
@@ -79,20 +62,26 @@ public class BinaryTree<T> {
 
         }else{
             System.out.println("Root is Null");
+            throw new Exception();
         }
         return  inOrderList;
     }
-
-    public static ArrayList<Object> postOrder(Node root){
-        if(root.left != null){
-            postOrder(root.left);
+    public ArrayList<Object> postOrder(Node root) throws Exception {
+        if (root != null) {
+            if (root.left != null) {
+                postOrder(root.left);
+            }
+            if (root.right != null) {
+                postOrder(root.right);
+            }
+            postOrderList.add(root.data);
+        }else{
+            System.out.println("Root is Null");
+            throw new Exception();
         }
-        if(root.right !=null){
-            postOrder(root.right);
-        }
-        postOrderList.add(root.data);
 
         return postOrderList;
     }
+
 
 }
