@@ -22,7 +22,7 @@ public class App {
     // Using ArrayDeque is another way to solve this challenge
     public static boolean validateBrackets(String s) {
 
-        Stack<Character> stack = new Stack<>();
+        Stack<Character> stack = new Stack<Character>();
 
         for(int i=0 ; i<s.length() ;i++ ){
             if (s.charAt(i) == '{' || s.charAt(i) == '(' || s.charAt(i) == '[') {
