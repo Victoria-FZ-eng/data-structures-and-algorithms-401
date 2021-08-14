@@ -10,5 +10,29 @@ public class App {
 
     public static void main(String[] args) {
         System.out.println(new App().getGreeting());
+
+        BinaryTree tree = new BinaryTree();
+        Node root =  new Node("A");
+        root.left = new Node("B");
+        root.right = new Node("C");
+        root.left.left = new Node("D");
+        root.left.right = new Node("E");
+        root.right.left = new Node("F");
+        root.right.right = new Node("G");
+
+        BinaryTree tree2 = new BinaryTree();
+        Node root2 = new Node(1);
+        tree2.treeAdd(2, root2);
+        tree2.treeAdd(3, root2);
+        tree2.treeAdd(4, root2);
+        tree2.treeAdd(5, root2);
+        tree2.treeAdd(6, root2);
+
+        System.out.println(tree.preOrder(root));
+        System.out.println(tree.inOrder(root));
+        System.out.println(tree.postOrder(root));
+        System.out.println(tree2.treeList);
+        System.out.println(tree2.preOrder(root2));
+
     }
 }
