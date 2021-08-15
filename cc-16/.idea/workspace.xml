@@ -7,8 +7,6 @@
     <list default="true" id="ee24fcc7-7031-4ace-a3de-d61172c8e0d0" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/../README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../cc-15/.idea/cc-15.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../cc-15/.idea/cc-15.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/test/java/cc/AppTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/test/java/cc/AppTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,11 +62,11 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="\\wsl$\Ubuntu\home\victoria\data-structures-and-algorithms-401\cc-16\app\src\main\java\cc" />
       <recent name="\\wsl$\Ubuntu\home\victoria\data-structures-and-algorithms-401\cc-16" />
+      <recent name="\\wsl$\Ubuntu\home\victoria\data-structures-and-algorithms-401\cc-16\app\src\main\java\cc" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.Tests in 'cc-16.app'">
+  <component name="RunManager" selected="Application.App">
     <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="cc.App" />
       <module name="cc-16.app.main" />
