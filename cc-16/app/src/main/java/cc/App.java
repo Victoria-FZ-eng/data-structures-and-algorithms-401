@@ -5,10 +5,35 @@ package cc;
 
 public class App {
     public String getGreeting() {
-        return "Hello World!";
+        return "Hello From Code Challenge 16";
     }
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws Exception {
         System.out.println(new App().getGreeting());
+
+        BinarySearchTree tree = new BinarySearchTree();
+        Node root = new Node(50);
+        tree.addBinarySearchTree(40,root);
+        tree.addBinarySearchTree(11,root);
+        tree.addBinarySearchTree(30,root);
+        tree.addBinarySearchTree(70,root);
+        tree.addBinarySearchTree(59,root);
+        tree.addBinarySearchTree(80,root);
+        tree.addBinarySearchTree(95,root);
+        tree.addBinarySearchTree(47,root);
+        tree.addBinarySearchTree(56,root);
+
+        System.out.println("Pre-Order=> "+tree.preOrder(root));
+        System.out.println("In-Order=> "+tree.inOrder(root));
+        System.out.println("Post-Order=> "+tree.postOrder(root));
+
+        // System.out.println(tree.maxValue(root));
+        getMax(tree,root);
+    }
+
+    public static Integer getMax(BinarySearchTree t, Node r){
+
+        System.out.println(t.maxValue(r));
+        return (Integer) t.maxValue(r);
     }
 }
