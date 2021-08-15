@@ -7,8 +7,21 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
 class AppTest {
-    @Test void appHasAGreeting() {
+    @Test
+    void appHasAGreeting() {
         App classUnderTest = new App();
         assertNotNull(classUnderTest.getGreeting(), "app should have a greeting");
+    }
+    @Test
+    void testMax(){
+
+        BinarySearchTree tree = new BinarySearchTree();
+        Node root = new Node(50);
+        tree.addBinarySearchTree(40,root);
+        tree.addBinarySearchTree(11,root);
+        tree.addBinarySearchTree(30,root);
+        tree.addBinarySearchTree(70,root);
+
+        assertEquals(70,App.getMax(tree,root));
     }
 }
