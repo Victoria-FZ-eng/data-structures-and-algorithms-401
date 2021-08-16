@@ -3,12 +3,31 @@
  */
 package cc;
 
+import java.util.ArrayList;
+import java.util.HashSet;
+
 public class App {
     public String getGreeting() {
-        return "Hello World!";
+        return "Hello From Code Challenge 17";
     }
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws Exception {
         System.out.println(new App().getGreeting());
+
+        BinaryTree tree = new BinaryTree();
+        Node root =  new Node("A");
+        root.left = new Node("B");
+        root.right = new Node("C");
+        root.left.left = new Node("D");
+        root.left.right = new Node("E");
+        root.right.left = new Node("F");
+        root.right.right = new Node("G");
+
+        System.out.println(breadthBinaryTree(tree,root));
+    }
+
+    public static HashSet breadthBinaryTree(BinaryTree tree, Node root) throws Exception {
+       tree.breadthFirst(root);
+       return  tree.breadthFirst(root);
     }
 }

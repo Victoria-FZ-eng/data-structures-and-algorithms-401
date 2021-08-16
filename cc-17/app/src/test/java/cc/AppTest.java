@@ -11,4 +11,16 @@ class AppTest {
         App classUnderTest = new App();
         assertNotNull(classUnderTest.getGreeting(), "app should have a greeting");
     }
+    @Test void breadthTree() throws Exception {
+        BinaryTree tree = new BinaryTree();
+        Node root =  new Node("A");
+        root.left = new Node("B");
+        root.right = new Node("C");
+        root.left.left = new Node("D");
+        root.left.right = new Node("E");
+        root.right.left = new Node("F");
+        root.right.right = new Node("G");
+
+        assertEquals("[A, B, C, D, E, F, G]", String.valueOf(App.breadthBinaryTree(tree,root)));
+    }
 }
