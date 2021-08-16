@@ -18,3 +18,5 @@ Table of Contents
 |stack-queue-pseudo | [cc-11](cc-11/read11.md) |
 |stack-queue-animal-shelter | [cc-12](cc-12/read12.md) |
 |trees | [cc-15](cc-15/read15.md) |
+|tree-max | [cc-16](cc-16/read16.md) |
+|tree-breadth-first | [cc-17](cc-17/read17.md) |
