@@ -17,13 +17,13 @@ class AppTest {
     @Test void pseudoCodeMthods() throws Exception {
         PseudoQueue q = new PseudoQueue<>();
         // Testing adding to empty queue
-        assertEquals("10", App.enQ(q,10));
+        assertEquals("[10]", App.enQ(q,10));
         q.enqueue(20);
         q.enqueue(30);
         // Testing adding to non-empty queue
-        assertEquals("40->30->20->10", App.enQ(q,40));
+        assertEquals("[40, 30, 20, 10]", App.enQ(q,40));
         // Testing removing from non-empty queue
-        assertEquals("10", App.deQ(q));
+        assertEquals("[40, 30, 20]", App.deQ(q));
         App.deQ(q);
         App.deQ(q);
         App.deQ(q);
