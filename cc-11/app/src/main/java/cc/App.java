@@ -26,13 +26,14 @@ public class App {
 
     }
 
-    public static String enQ(PseudoQueue pq, int num){
+    public static String enQ(PseudoQueue pq, int num) throws Exception {
        pq.enqueue(num);
        return pq.displayQueue();
     }
 
     public static String deQ(PseudoQueue pq) throws Exception {
-
-        return pq.dequeue();
+        pq.dequeue();
+        return pq.displayQueue() ;
     }
+
 }
