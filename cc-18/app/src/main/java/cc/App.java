@@ -20,7 +20,6 @@ public class App {
         parent.child.add(new Node(13));
         parent.child.add(new Node(9));
 
-        System.out.println("hello");
         Node r0 = (Node) parent.child.get(0);
         r0.child.add(new Node(25));
         r0.child.add(new Node(8));
