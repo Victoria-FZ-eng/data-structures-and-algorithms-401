@@ -3,12 +3,52 @@
  */
 package cc;
 
+import java.util.ArrayList;
+
 public class App {
     public String getGreeting() {
-        return "Hello World!";
+        return "Hello From Code Challenge 18";
     }
 
     public static void main(String[] args) {
         System.out.println(new App().getGreeting());
+
+
+        KaryTree tree = new KaryTree();
+        Node parent= new Node(0);
+        parent.child.add(new Node(75));
+        parent.child.add(new Node(13));
+        parent.child.add(new Node(9));
+
+        System.out.println("hello");
+        Node r0 = (Node) parent.child.get(0);
+        r0.child.add(new Node(25));
+        r0.child.add(new Node(8));
+        Node r1 = (Node) parent.child.get(1);
+        r1.child.add(new Node(30));
+        r1.child.add(new Node(18));
+        Node r2 = (Node) parent.child.get(2);
+        r2.child.add(new Node(34));
+        r2.child.add(new Node(80));
+
+
+        //System.out.println(tree.nodesFizzBuzz(parent));
+        System.out.println(fizzBuzzarr(tree,parent));
+    }
+
+    public static ArrayList<String> fizzBuzzarr(KaryTree t,Node parent){
+        ArrayList<String> newFB=new ArrayList();
+
+        if (parent.data %5 ==0 && parent.data%3 ==0 ){
+            newFB.add("FizzBuzz");
+        }else if(parent.data %5 ==0){
+            newFB.add("Buzz");
+        }else if(parent.data %3 ==0){
+            newFB.add("Fizz");
+        }else {
+            newFB.add("num: "+parent.data);
+        }
+        newFB.addAll(t.nodesFizzBuzz(parent));
+        return  newFB;
     }
 }
