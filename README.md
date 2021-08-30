@@ -20,4 +20,4 @@ Table of Contents
 |trees | [cc-15](cc-15/read15.md) |
 |tree-max | [cc-16](cc-16/read16.md) |
 |tree-breadth-first | [cc-17](cc-17/read17.md) |
-|insertion-sort | [cc-26](cc-26/BLOG.md) |
+|insertion-sort | [cc-26](cc-26/blog-article/README.md) |
