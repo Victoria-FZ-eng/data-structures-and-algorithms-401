@@ -3,6 +3,8 @@
  */
 package cc;
 
+import java.util.ArrayList;
+
 public class App {
     public String getGreeting() {
         return "Hello From Code Challenge 27";
@@ -21,10 +23,11 @@ public class App {
         sortArr(arr4);
     }
 
-    public static void sortArr(int arr[]){
+    public static ArrayList<Integer> sortArr(int[] arr){
         MergeSort ms = new MergeSort();
 
         ms.sort(arr);
         ms.printArray(arr);
+        return ms.testArray(arr);
     }
 }

@@ -1,5 +1,7 @@
 package cc;
 
+import java.util.ArrayList;
+
 public class MergeSort {
 
     static void sort(int arr[]){
@@ -25,7 +27,7 @@ public class MergeSort {
             sort(rightArr);
 
             merge(leftArr,rightArr,arr);
-           
+
         }
 
     }
@@ -66,5 +68,16 @@ public class MergeSort {
             System.out.print(arr[i] + " ");
 
         System.out.println();
+    }
+
+
+    static ArrayList<Integer> testArray(int arr[])
+    {
+        int n = arr.length;
+        ArrayList<Integer> arrOut= new ArrayList<>();
+        for (int i = 0; i < n; ++i)
+            arrOut.add(arr[i]);
+
+        return arrOut;
     }
 }
