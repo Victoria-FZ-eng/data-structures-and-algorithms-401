@@ -21,3 +21,5 @@ Table of Contents
 |tree-max | [cc-16](cc-16/read16.md) |
 |tree-breadth-first | [cc-17](cc-17/read17.md) |
 |tree-fizz-buzz | [cc-18](cc-18/read18.md) |
+|insertion-sort | [cc-26](cc-26/blog-article/README.md) |
+
