@@ -23,4 +23,5 @@ Table of Contents
 |tree-fizz-buzz | [cc-18](cc-18/read18.md) |
 |insertion-sort | [cc-26](part-2/cc-26/BLOG.md) |
 |merge-sort | [cc-27](part-2/cc-27/BLOG.md) |
+|quick-sort | [cc-28](part-2/cc-28/BLOG.md) |
 
