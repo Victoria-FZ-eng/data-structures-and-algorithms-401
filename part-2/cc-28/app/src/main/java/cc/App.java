@@ -10,5 +10,14 @@ public class App {
 
     public static void main(String[] args) {
         System.out.println(new App().getGreeting());
+
+
+        int[] arr = { 10, 7, 8, 9, 1, 5 };
+        int n = arr.length;
+
+        QuickSort qs = new QuickSort();
+        qs.quickSort(arr, 0, n - 1);
+        System.out.println("Sorted array: ");
+        qs.printArray(arr, n);
     }
 }
