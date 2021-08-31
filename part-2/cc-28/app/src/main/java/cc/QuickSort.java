@@ -48,5 +48,15 @@ public class QuickSort {
         System.out.println();
     }
 
+    static ArrayList<Integer> testArray(int arr[])
+    {
+        int n = arr.length;
+        ArrayList<Integer> arrOut= new ArrayList<>();
+        for (int i = 0; i < n; ++i)
+            arrOut.add(arr[i]);
+
+        return arrOut;
+    }
+
     // Reference https://www.geeksforgeeks.org/quick-sort/
 }

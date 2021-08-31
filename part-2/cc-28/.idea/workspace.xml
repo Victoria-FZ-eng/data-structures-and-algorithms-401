@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="75f2f9fb-29d7-441e-8892-ec4cdfb392d3" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../../cc-11/stack-queue-pseudo.png:Zone.Identifier" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../cc-12/stack-queue-animal-shelter.png:Zone.Identifier" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../cc-13/stack-queue-brackets.png:Zone.Identifier" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../cc-16/tree-max.png:Zone.Identifier" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../cc-17/ex.png:Zone.Identifier" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../cc-17/tree-breadth-first.png:Zone.Identifier" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cc-26/insertion-sort.png:Zone.Identifier" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cc-27/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../cc-27/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cc-27/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../cc-27/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries-with-intellij-classes.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/cc/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/cc/App.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/cc/QuickSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/cc/QuickSort.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <projects_view>
+          <tree_state>
+            <expand />
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="ProjectId" id="1xUT7jfgkU8R9x46W1d9nNZc1IB" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="settings.editor.selected.configurable" value="preferences.fileTypes" />
+  </component>
+  <component name="RunManager">
+    <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="cc.App" />
+      <module name="cc-28.app.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="cc.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.App" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="75f2f9fb-29d7-441e-8892-ec4cdfb392d3" name="Default Changelist" comment="" />
+      <created>1630408504319</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1630408504319</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+</project>

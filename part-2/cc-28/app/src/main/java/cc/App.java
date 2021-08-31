@@ -15,9 +15,17 @@ public class App {
         int[] arr = { 10, 7, 8, 9, 1, 5 };
         int n = arr.length;
 
+        quickSort(arr, 0, n - 1)
+
+//        QuickSort qs = new QuickSort();
+//        qs.quickSort(arr, 0, n - 1);
+//        System.out.println("Sorted array: ");
+//        qs.printArray(arr, n);
+    }
+    public static ArrayList quickSort(int arr[], int x int y){
         QuickSort qs = new QuickSort();
-        qs.quickSort(arr, 0, n - 1);
-        System.out.println("Sorted array: ");
-        qs.printArray(arr, n);
+        qs.quickSort(arr, x, y);
+        qs.printArray(arr, y+1);
+        return qs.testArray(arr);
     }
 }
