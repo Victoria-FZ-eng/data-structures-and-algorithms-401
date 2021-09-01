@@ -19,10 +19,7 @@ public class App {
 
         quickSortMain(arr, 0, n - 1);
 
-//        QuickSort qs = new QuickSort();
-//        qs.quickSort(arr, 0, n - 1);
-//        System.out.println("Sorted array: ");
-//        qs.printArray(arr, n);
+
     }
     public static ArrayList quickSortMain(int arr[], int x ,int y){
         QuickSort qs = new QuickSort();
