@@ -5,6 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="75f2f9fb-29d7-441e-8892-ec4cdfb392d3" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/cc-28.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../cc-11/stack-queue-pseudo.png:Zone.Identifier" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../../cc-12/stack-queue-animal-shelter.png:Zone.Identifier" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../../cc-13/stack-queue-brackets.png:Zone.Identifier" beforeDir="false" />
@@ -12,6 +14,9 @@
       <change beforePath="$PROJECT_DIR$/../../cc-17/ex.png:Zone.Identifier" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../../cc-17/tree-breadth-first.png:Zone.Identifier" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../cc-26/insertion-sort.png:Zone.Identifier" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/cc/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/cc/App.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,6 +64,8 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="preferences.fileTypes" />
   </component>
   <component name="RunManager" selected="Gradle.AppTest">
