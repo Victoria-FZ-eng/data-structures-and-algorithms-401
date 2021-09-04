@@ -11,15 +11,32 @@ public class App {
     public static void main(String[] args) {
         System.out.println(new App().getGreeting());
 
-//        Map<String, Integer> map = new Map<>();
-//        map.add("this", 1);
-//        map.add("coder", 2);
-//        map.add("this", 4);
-//        map.add("hi", 5);
-//        System.out.println(map.size());
-//        System.out.println(map.remove("this"));
-//        System.out.println(map.remove("this"));
-//        System.out.println(map.size());
-//        System.out.println(map.isEmpty());
+        Map<String, Integer> map = new Map<>();
+        map.add("this", 1);
+        map.add("coder", 2);
+        map.add("this", 4);
+        map.add("hi", 5);
+        System.out.println(map.size());
+        System.out.println(map.remove("this"));
+        System.out.println(map.remove("this"));
+        System.out.println(map.size());
+        System.out.println(map.isEmpty());
+        System.out.println(map.hash("hi"));
+        System.out.println(map.contains("hi"));
+        System.out.println(map.contains("this"));
+        System.out.println(map.get("this"));
+    }
+
+    public boolean addKeyValue(String key, int value){
+        Map<String, Integer> map = new Map<>();
+        map.add(key, value);
+        return map.contains(key);
+    }
+    public Object getValueOfKey(String key, Map map){
+
+        return map.get(key);
+    }
+    public Object hashKey(String key,Map map){
+        return map.hash(key);
     }
 }

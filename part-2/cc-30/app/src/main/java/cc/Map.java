@@ -32,7 +32,7 @@ public class Map<K, V> {
     }
 
     // get the index of in the collection for the key
-    private int hash(K key) {
+    public int hash(K key) {
         int hashCode = hashCode(key);
         int index = hashCode % numBuckets;
         // key.hashCode() coule be negative.
@@ -98,6 +98,19 @@ public class Map<K, V> {
         }
     }
 
+    public boolean contains (K key){
+        int bucketIndex = hash(key);
+        int hashCode = hashCode(key);
+        HashNode<K, V> head = bucketArray.get(bucketIndex);
+        while (head != null) {
+            if (head.key.equals(key) && head.hashCode == hashCode) {
+
+                return true;
+            }
+            head = head.next;
+        }
+        return false;
+    }
 
 
 
