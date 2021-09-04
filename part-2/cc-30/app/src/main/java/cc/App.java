@@ -17,6 +17,7 @@ public class App {
         map.add("this", 4);
         map.add("hi", 5);
         System.out.println(map.size());
+        System.out.println(map.get("this"));
         System.out.println(map.remove("this"));
         System.out.println(map.remove("this"));
         System.out.println(map.size());
@@ -25,18 +26,19 @@ public class App {
         System.out.println(map.contains("hi"));
         System.out.println(map.contains("this"));
         System.out.println(map.get("this"));
+        System.out.println(hashKey("coder" ,map));
     }
 
-    public boolean addKeyValue(String key, int value){
+    public static boolean addKeyValue(String key, int value){
         Map<String, Integer> map = new Map<>();
         map.add(key, value);
         return map.contains(key);
     }
-    public Object getValueOfKey(String key, Map map){
+    public static Object getValueOfKey(String key, Map map){
 
         return map.get(key);
     }
-    public Object hashKey(String key,Map map){
+    public static Integer hashKey(String key,Map map){
         return map.hash(key);
     }
 }
