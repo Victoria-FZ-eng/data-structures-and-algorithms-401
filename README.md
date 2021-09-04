@@ -24,5 +24,5 @@ Table of Contents
 |insertion-sort | [cc-26](part-2/cc-26/BLOG.md) |
 |merge-sort | [cc-27](part-2/cc-27/BLOG.md) |
 |quick-sort | [cc-28](part-2/cc-28/BLOG.md) |
-|hash-table | [cc-30](part-2/cc-30/BLOG.md) |
+|hash-table | [cc-30](part-2/cc-30/read30.md) |
 
