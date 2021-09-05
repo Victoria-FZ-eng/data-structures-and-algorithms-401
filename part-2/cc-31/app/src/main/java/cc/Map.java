@@ -41,22 +41,22 @@ public class Map<K, V> {
     }
 
     // Returns value for a key
-    public V get(K key) {
-        int bucketIndex = hash(key);
-        int hashCode = hashCode(key);
-
-        HashNode<K, V> head = bucketArray.get(bucketIndex);
-
-        while (head != null) {
-            if (head.key.equals(key) && head.hashCode == hashCode)
-                return head.value;
-            head = head.next;
-        }
-        return null;
-    }
+//    public V get(K key) {
+//        int bucketIndex = hash(key);
+//        int hashCode = hashCode(key);
+//
+//        HashNode<K, V> head = bucketArray.get(bucketIndex);
+//
+//        while (head != null) {
+//            if (head.key.equals(key) && head.hashCode == hashCode)
+//                return head.value;
+//            head = head.next;
+//        }
+//        return null;
+//    }
 
     // Adds a key value pair to hash-table
-    public void add(K key, V value) {
+    public String add(K key, V value) {
 
         int bucketIndex = hash(key);
         int hashCode = hashCode(key);
@@ -65,8 +65,8 @@ public class Map<K, V> {
 
         while (head != null) {
             if (head.key.equals(key) && head.hashCode == hashCode) {
-                head.value = value;
-                return;
+               // head.value = value;
+               return "getKey";
             }
             head = head.next;
         }
@@ -96,55 +96,56 @@ public class Map<K, V> {
                 }
             }
         }
+        return "noRepeatedWords";
     }
 
-    public boolean contains (K key){
-        int bucketIndex = hash(key);
-        int hashCode = hashCode(key);
-        HashNode<K, V> head = bucketArray.get(bucketIndex);
-        while (head != null) {
-            if (head.key.equals(key) && head.hashCode == hashCode) {
-
-                return true;
-            }
-            head = head.next;
-        }
-        return false;
-    }
+//    public boolean contains (K key){
+//        int bucketIndex = hash(key);
+//        int hashCode = hashCode(key);
+//        HashNode<K, V> head = bucketArray.get(bucketIndex);
+//        while (head != null) {
+//            if (head.key.equals(key) && head.hashCode == hashCode) {
+//
+//                return true;
+//            }
+//            head = head.next;
+//        }
+//        return false;
+//    }
 
     // to remove key,value pair - not required in cc-30
-    public V remove(K key) {
-        int bucketIndex = hash(key);
-        int hashCode = hashCode(key);
-
-        HashNode<K, V> head = bucketArray.get(bucketIndex);
-
-
-        HashNode<K, V> prev = null;
-        while (head != null) {
-            // If Key found
-            if (head.key.equals(key) && hashCode == head.hashCode)
-                break;
-
-            // Else keep moving in chain
-            prev = head;
-            head = head.next;
-        }
-
-        // If key was not there
-        if (head == null)
-            return null;
-
-        // Reduce size
-        size--;
-
-        // Remove key
-        if (prev != null)
-            prev.next = head.next;
-        else
-            bucketArray.set(bucketIndex, head.next);
-
-        return head.value;
-    }
+//    public V remove(K key) {
+//        int bucketIndex = hash(key);
+//        int hashCode = hashCode(key);
+//
+//        HashNode<K, V> head = bucketArray.get(bucketIndex);
+//
+//
+//        HashNode<K, V> prev = null;
+//        while (head != null) {
+//            // If Key found
+//            if (head.key.equals(key) && hashCode == head.hashCode)
+//                break;
+//
+//            // Else keep moving in chain
+//            prev = head;
+//            head = head.next;
+//        }
+//
+//        // If key was not there
+//        if (head == null)
+//            return null;
+//
+//        // Reduce size
+//        size--;
+//
+//        // Remove key
+//        if (prev != null)
+//            prev.next = head.next;
+//        else
+//            bucketArray.set(bucketIndex, head.next);
+//
+//        return head.value;
+//    }
 
 }

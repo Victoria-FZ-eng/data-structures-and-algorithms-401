@@ -14,19 +14,45 @@ public class App {
         System.out.println(new App().getGreeting());
 
 
-        splittingBookStringToWords("This is a sample sentence.");
+        System.out.println(gettingTheFirstRepeatedWord(
+                splittingBookStringToWords("This is a sample  sample sentence.")));
 
+        System.out.println(gettingTheFirstRepeatedWord(
+                splittingBookStringToWords("Once upon a time, there was a brave princess who...")));
+
+        System.out.println(gettingTheFirstRepeatedWord(
+                splittingBookStringToWords("It was the best of times, it was the worst of times," +
+                        " it was the age of wisdom, it was the age of foolishness, it was the epoch of belief, " +
+                        "it was the epoch of incredulity, it was the season of Light, it was the season of " +
+                        "Darkness, it was the spring of hope, it was the winter of despair, we had everything" +
+                        " before us, we had nothing before us, we were all going direct to Heaven, we were all" +
+                        " going direct the other way – in short, the period was so far like the present period," +
+                        " that some of its noisiest authorities insisted on its being received, for good or for " +
+                        "evil, in the superlative degree of comparison only...")));
 
     }
 
-    public static void splittingBookStringToWords(String book){
+    public static String[] splittingBookStringToWords(String book){
         String[] words = book.split("\\s+");
         for (int i = 0; i < words.length; i++) {
             // You may want to check for a non-word character before blindly
             // performing a replacement
             // It may also be necessary to adjust the character class
             words[i] = words[i].replaceAll("[^\\w]", "");
-            System.out.println(words[i]);
+          //  System.out.println(words[i]);
         }
+        return words;
+    }
+
+    public static String gettingTheFirstRepeatedWord(String[] book){
+
+        Map map = new Map();
+        for (int i = 0; i < book.length; i++) {
+           if(map.add(book[i],0) == "getKey"){
+               return book[i];
+           }
+        }
+
+        return "NoRepeatedWord";
     }
 }
