@@ -13,8 +13,14 @@ public class App {
     public static void main(String[] args) {
         System.out.println(new App().getGreeting());
 
-        String s = "This is a sample sentence.";
-        String[] words = s.split("\\s+");
+
+        splittingBookStringToWords("This is a sample sentence.");
+
+
+    }
+
+    public static void splittingBookStringToWords(String book){
+        String[] words = book.split("\\s+");
         for (int i = 0; i < words.length; i++) {
             // You may want to check for a non-word character before blindly
             // performing a replacement
@@ -22,6 +28,5 @@ public class App {
             words[i] = words[i].replaceAll("[^\\w]", "");
             System.out.println(words[i]);
         }
-
     }
 }

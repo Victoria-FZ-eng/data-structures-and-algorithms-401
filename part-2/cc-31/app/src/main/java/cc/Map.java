@@ -112,8 +112,6 @@ public class Map<K, V> {
         return false;
     }
 
-
-
     // to remove key,value pair - not required in cc-30
     public V remove(K key) {
         int bucketIndex = hash(key);
@@ -148,6 +146,5 @@ public class Map<K, V> {
 
         return head.value;
     }
-
 
 }
