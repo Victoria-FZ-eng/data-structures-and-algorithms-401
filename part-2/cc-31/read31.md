@@ -1,5 +1,5 @@
 # Challenge Summary
-<!-- Description of the challenge -->
+Finding the first repeated word from a string, input: string - output: string.
 
 ## Whiteboard Process
 <!-- Embedded whiteboard image -->
@@ -8,7 +8,9 @@
 <!-- What approach did you take? Why? What is the Big O space/time for this approach? -->
 
 ## Solution
-<!-- Show how to run your code, and examples of it in action -->
+
+1. splitting the book string into words, with excluding punctuation marks using regex.
+2. mapping thouth the array of words , and break the loop at the first collision.
 
 
 **References:**

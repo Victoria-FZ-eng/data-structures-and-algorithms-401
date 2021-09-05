@@ -15,13 +15,13 @@ public class App {
 
 
         System.out.println(gettingTheFirstRepeatedWord(
-                splittingBookStringToWords("This is a sample  sample sentence.")));
+                ("This is a sample  sample sentence.")));
 
         System.out.println(gettingTheFirstRepeatedWord(
-                splittingBookStringToWords("Once upon a time, there was a brave princess who...")));
+                ("Once upon a time, there was a brave princess who...")));
 
         System.out.println(gettingTheFirstRepeatedWord(
-                splittingBookStringToWords("It was the best of times, it was the worst of times," +
+                ("It was the best of times, it was the worst of times," +
                         " it was the age of wisdom, it was the age of foolishness, it was the epoch of belief, " +
                         "it was the epoch of incredulity, it was the season of Light, it was the season of " +
                         "Darkness, it was the spring of hope, it was the winter of despair, we had everything" +
@@ -31,7 +31,7 @@ public class App {
                         "evil, in the superlative degree of comparison only...")));
 
         System.out.println(gettingTheFirstRepeatedWord(
-                splittingBookStringToWords("It was a queer, sultry summer, the summer they electrocuted the" +
+                ("It was a queer, sultry summer, the summer they electrocuted the" +
                         " Rosenbergs, and I didn’t know what I was doing in New York...")));
 
     }
@@ -48,12 +48,14 @@ public class App {
         return words;
     }
 
-    public static String gettingTheFirstRepeatedWord(String[] book){
+    public static String gettingTheFirstRepeatedWord(String book){
+
+        String[] words =splittingBookStringToWords(book);
 
         Map map = new Map();
-        for (int i = 0; i < book.length; i++) {
-           if(map.add(book[i].toLowerCase(),0) == "getKey"){
-               return book[i];
+        for (int i = 0; i < words.length; i++) {
+           if(map.add(words[i].toLowerCase(),0) == "getKey"){
+               return words[i];
            }
         }
 
