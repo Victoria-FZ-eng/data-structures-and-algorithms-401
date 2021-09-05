@@ -48,7 +48,7 @@ public class App {
 
         Map map = new Map();
         for (int i = 0; i < book.length; i++) {
-           if(map.add(book[i],0) == "getKey"){
+           if(map.add(book[i].toLowerCase(),0) == "getKey"){
                return book[i];
            }
         }
