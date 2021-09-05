@@ -30,6 +30,10 @@ public class App {
                         " that some of its noisiest authorities insisted on its being received, for good or for " +
                         "evil, in the superlative degree of comparison only...")));
 
+        System.out.println(gettingTheFirstRepeatedWord(
+                splittingBookStringToWords("It was a queer, sultry summer, the summer they electrocuted the" +
+                        " Rosenbergs, and I didn’t know what I was doing in New York...")));
+
     }
 
     public static String[] splittingBookStringToWords(String book){
