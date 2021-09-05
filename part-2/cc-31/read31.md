@@ -2,10 +2,14 @@
 Finding the first repeated word from a string, input: string - output: string.
 
 ## Whiteboard Process
-<!-- Embedded whiteboard image -->
+![hashmap-repeated-word](./hashmap-repeated-word.png)
 
 ## Approach & Efficiency
-<!-- What approach did you take? Why? What is the Big O space/time for this approach? -->
+using add to hashmap function ->  find the first collision 
+
+Space: O(n)
+
+Time:  O(log(n))
 
 ## Solution
 
