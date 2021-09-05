@@ -12,13 +12,13 @@ class AppTest {
         assertNotNull(classUnderTest.getGreeting(), "app should have a greeting");
     }
     @Test void testGettingTheFirstRepeatedWord(){
-        assertEquals("hello",App.gettingTheFirstRepeatedWord(App.splittingBookStringToWords(
+        assertEquals("hello",App.gettingTheFirstRepeatedWord((
                 "Hello, hello, hi, hello hi how are you hi")));
 
-        assertEquals("hello",App.gettingTheFirstRepeatedWord(App.splittingBookStringToWords(
+        assertEquals("hello",App.gettingTheFirstRepeatedWord((
                 "Hello hello hi hello hi how are you hi")));
 
-        assertEquals("hello",App.gettingTheFirstRepeatedWord(App.splittingBookStringToWords(
+        assertEquals("hello",App.gettingTheFirstRepeatedWord((
                 "hello hi hello hi how are you hi")));
     }
 }
