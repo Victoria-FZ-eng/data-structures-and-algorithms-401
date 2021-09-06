@@ -40,7 +40,7 @@ public class Map<K, V> {
         return index;
     }
 
-    public void add(K key, int value) {
+    public void add(K key, V value) {
 
         int bucketIndex = hash(key);
         int hashCode = hashCode(key);
@@ -49,8 +49,8 @@ public class Map<K, V> {
 
         while (head != null) {
             if (head.key.equals(key) && head.hashCode == hashCode) {
-                 head.value = value+1 ;
-
+                head.value =value;
+                return;
             }
             head = head.next;
         }
@@ -58,10 +58,10 @@ public class Map<K, V> {
 
         size++;
         head = bucketArray.get(bucketIndex);
-        HashNode<K, Integer> newNode
-                = new HashNode<K, Integer>(key, value, hashCode);
-        newNode.next = (HashNode<K, Integer>) head;
-        bucketArray.set(bucketIndex, (HashNode<K, V>) newNode);
+        HashNode<K, V> newNode
+                = new HashNode<K, V>(key, value, hashCode);
+        newNode.next = head;
+        bucketArray.set(bucketIndex, newNode);
 
         // If load factor goes beyond threshold, then
         // double hash table size
@@ -75,11 +75,53 @@ public class Map<K, V> {
 
             for (HashNode<K, V> headNode : temp) {
                 while (headNode != null) {
-                    add(headNode.key, (Integer) headNode.value);
+                    add(headNode.key, headNode.value);
                     headNode = headNode.next;
                 }
             }
         }
+    }
+
+    public String  add2(K key, V value) {
+        int bucketIndex = hash(key);
+        int hashCode = hashCode(key);
+        HashNode<K, V> head = bucketArray.get(bucketIndex);
+
+
+        while (head != null) {
+            if (head.key.equals(key) && head.hashCode == hashCode) {
+                // head.value = value;
+                return "getKey";
+            }
+            head = head.next;
+        }
+
+
+        size++;
+        head = bucketArray.get(bucketIndex);
+        HashNode<K, V> newNode
+                = new HashNode<K, V>(key, value, hashCode);
+        newNode.next = head;
+        bucketArray.set(bucketIndex, newNode);
+
+        // If load factor goes beyond threshold, then
+        // double hash table size
+        if ((1.0 * size) / numBuckets >= 0.7) {
+            ArrayList<HashNode<K, V> > temp = bucketArray;
+            bucketArray = new ArrayList<>();
+            numBuckets = 2 * numBuckets;
+            size = 0;
+            for (int i = 0; i < numBuckets; i++)
+                bucketArray.add(null);
+
+            for (HashNode<K, V> headNode : temp) {
+                while (headNode != null) {
+                    add(headNode.key, headNode.value);
+                    headNode = headNode.next;
+                }
+            }
+        }
+        return "noRepeatedWords";
 
     }
 

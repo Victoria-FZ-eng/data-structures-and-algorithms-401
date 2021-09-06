@@ -6,7 +6,7 @@ public class BinarySearchTree extends BinaryTree{
 
     public void addBinarySearchTree(int value,Node<Integer> rootNode){
         root= rootNode;
-        if (value <= rootNode.data){
+        if (value < rootNode.data){
             if(root.left == null){
                 root.left = new Node(value);
             }else{

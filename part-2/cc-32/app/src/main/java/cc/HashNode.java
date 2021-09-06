@@ -3,7 +3,7 @@ package cc;
 
 public class HashNode <K, V>{
     K key;
-    int value;
+   V value;
     final int hashCode;
 
     HashNode<K, V> next;
@@ -11,7 +11,7 @@ public class HashNode <K, V>{
     public HashNode(K key, V value, int hashCode)
     {
         this.key = key;
-        this.value = (int) value;
+        this.value =  value;
         this.hashCode = hashCode;
     }
 }
