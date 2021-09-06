@@ -26,4 +26,5 @@ Table of Contents
 |quick-sort | [cc-28](part-2/cc-28/BLOG.md) |
 |hash-table | [cc-30](part-2/cc-30/read30.md) |
 |hashmap-repeated-word | [cc-31](part-2/cc-31/read31.md) |
+|hashmap-tree-intersection | [cc-32](part-2/cc-32/read32.md) |
 
