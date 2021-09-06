@@ -11,4 +11,21 @@ class AppTest {
         App classUnderTest = new App();
         assertNotNull(classUnderTest.getGreeting(), "app should have a greeting");
     }
+    @Test void getIntersections() throws Exception {
+        BinarySearchTree biTree = new BinarySearchTree();
+        Node rootBi = new Node(15);
+        biTree.addBinarySearchTree(13,rootBi);
+        biTree.addBinarySearchTree(12,rootBi);
+        biTree.addBinarySearchTree(17,rootBi);
+        biTree.addBinarySearchTree(40,rootBi);
+
+        BinarySearchTree biTree2 = new BinarySearchTree();
+        Node rootBi2 = new Node(40);
+        biTree2.addBinarySearchTree(70,rootBi2);
+        biTree2.addBinarySearchTree(90,rootBi2);
+        biTree2.addBinarySearchTree(11,rootBi2);
+        biTree2.addBinarySearchTree(15,rootBi2);
+
+        assertEquals("[15, 40]", String.valueOf(App.getIntersections(biTree,rootBi,rootBi2,biTree2)));
+    }
 }

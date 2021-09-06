@@ -37,7 +37,7 @@ public class App {
         biTree2.addBinarySearchTree(32,rootBi2);
         biTree2.addBinarySearchTree(74,rootBi2);
 
-       
+
 
         getIntersections(biTree,rootBi,rootBi2,biTree2);
 
