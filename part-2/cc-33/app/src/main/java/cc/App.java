@@ -30,6 +30,8 @@ public class App {
         map2.add("flow","jam");
 
         leftJoins(map1,map2);
+       // System.out.println(map1.contains("wrath"));
+      //  System.out.println(map1.hash("wrath"));
 
     }
 
@@ -43,7 +45,7 @@ public class App {
                joined.add("["+key + ", "+ mp1.get(key)+ ", "+ null+ "]");
            }
         }
-      //  System.out.println(joined);
+        System.out.println(joined);
         return joined;
     }
 

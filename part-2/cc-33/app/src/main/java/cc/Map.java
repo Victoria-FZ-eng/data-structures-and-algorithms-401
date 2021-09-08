@@ -67,7 +67,6 @@ public class Map<K, V> {
         while (head != null) {
             if (head.key.equals(key) && head.hashCode == hashCode) {
                 head.value = value;
-
                 return;
             }
             head = head.next;
@@ -80,7 +79,6 @@ public class Map<K, V> {
                 = new HashNode<K, V>(key, value, hashCode);
         newNode.next = head;
         bucketArray.set(bucketIndex, newNode);
-
 
         // If load factor goes beyond threshold, then
         // double hash table size
@@ -99,7 +97,6 @@ public class Map<K, V> {
                 }
             }
         }
-
     }
 
     public boolean contains (K key){
@@ -125,16 +122,26 @@ public class Map<K, V> {
                 pairs.add(keyValue);
             }
         }
+        if(bucketArray.get(0)!= null){
+            String pair ="\""+ (String) bucketArray.get(0).key +": "+ (String) bucketArray.get(0).value + "\"";
+            pairs.add(pair);
+        }
         return pairs;
     }
     public ArrayList getKeys(){
         ArrayList<String> keys = new ArrayList();
+
         for (HashNode<K, V> kvHashNode : bucketArray) {
+           // System.out.println(kvHashNode);
             if(kvHashNode != null){
-                System.out.println(kvHashNode.key);
+              //  System.out.println(kvHashNode.key);
                 String key = (String) kvHashNode.key ;
                 keys.add(key);
             }
+        }
+        if(bucketArray.get(0)!= null){
+            String key = (String) bucketArray.get(0).key ;
+            keys.add(key);
         }
         return keys;
     }
