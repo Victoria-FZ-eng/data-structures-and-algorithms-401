@@ -38,12 +38,14 @@ public class App {
     public static ArrayList leftJoins(Map mp1, Map mp2){
         ArrayList joined = new ArrayList();
      //   System.out.println(mp1.getKeys());
-        for (Object key : mp1.getKeys()) {
-           if (mp2.contains(key)){
-               joined.add("["+key + ", "+ mp1.get(key)+ ", "+ mp2.get(key)+ "]");
-           }else{
-               joined.add("["+key + ", "+ mp1.get(key)+ ", "+ null+ "]");
-           }
+        if(mp1.getKeys().size()!=0){
+            for (Object key : mp1.getKeys()) {
+                if (mp2.contains(key)){
+                    joined.add("["+key + ", "+ mp1.get(key)+ ", "+ mp2.get(key)+ "]");
+                }else{
+                    joined.add("["+key + ", "+ mp1.get(key)+ ", "+ null+ "]");
+                }
+            }
         }
         System.out.println(joined);
         return joined;
