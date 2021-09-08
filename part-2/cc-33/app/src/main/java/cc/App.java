@@ -3,12 +3,62 @@
  */
 package cc;
 
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+
 public class App {
     public String getGreeting() {
-        return "Hello World!";
+        return "Hello From Code Challenge 33!";
     }
 
     public static void main(String[] args) {
         System.out.println(new App().getGreeting());
+
+        Map map1 = new Map();
+        map1.add("fond","enamored");
+        map1.add("wrath","anger");
+        map1.add("diligent","employed");
+        map1.add("outfit","grab");
+        map1.add("guid","usher");
+
+        Map map2 = new Map();
+        map2.add("fond","averse");
+        map2.add("wrath","delight");
+        map2.add("diligent","idle");
+        map2.add("guid","follow");
+        map2.add("flow","jam");
+
+        leftJoins(map1,map2);
+
     }
+
+    public static ArrayList leftJoins(Map mp1, Map mp2){
+        ArrayList joined = new ArrayList();
+     //   System.out.println(mp1.getKeys());
+        for (Object key : mp1.getKeys()) {
+           if (mp2.contains(key)){
+               joined.add("["+key + ", "+ mp1.get(key)+ ", "+ mp2.get(key)+ "]");
+           }else{
+               joined.add("["+key + ", "+ mp1.get(key)+ ", "+ null+ "]");
+           }
+        }
+      //  System.out.println(joined);
+        return joined;
+    }
+
+// Using the biult in HashMap method
+//    public static List<String> leftJoin(HashMap h1, HashMap h2){
+//
+//        List<String> list = new ArrayList<>();
+//        for(Object k : h1.keySet()){
+//            if(h1.containsKey(k)){
+//                list.add(k +  ": " + h1.get(k)+ ", " + h2.get(k));
+//            } else{
+//                list.add(k + ": " + h1.get(k) + ", " + null);
+//            }
+//        }
+//
+//        return list;
+//    }
 }
