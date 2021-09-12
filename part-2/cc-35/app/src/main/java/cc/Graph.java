@@ -49,11 +49,13 @@ public class Graph <T>{
     }
 
     // This function gives the count of vertices
-    public void getVertexCount()
-    {
+    public String  getVertexCount() {
         System.out.println("The graph has "
                 + map.keySet().size()
                 + " vertex");
+        return "The graph has "
+                + map.keySet().size()
+                + " vertex";
     }
 
     // Prints list of vertices.
@@ -112,19 +114,21 @@ public class Graph <T>{
 //                + " edges.");
 //    }
 
-//    // This function gives whether
-//    // a vertex is present or not.
-//    public void hasVertex(T s)
-//    {
-//        if (map.containsKey(s)) {
-//            System.out.println("The graph contains "
-//                    + s + " as a vertex.");
-//        }
-//        else {
-//            System.out.println("The graph does not contain "
-//                    + s + " as a vertex.");
-//        }
-//    }
+//    // This function gives whether a vertex is present or not.
+
+    public boolean hasVertex(T s)
+    {
+        if (map.containsKey(s)) {
+            System.out.println("The graph contains "
+                    + s + " as a vertex.");
+            return true;
+        }
+        else {
+            System.out.println("The graph does not contain "
+                    + s + " as a vertex.");
+            return false;
+        }
+    }
 
 //    // This function gives whether an edge is present or not.
 //    public void hasEdge(T s, T d)

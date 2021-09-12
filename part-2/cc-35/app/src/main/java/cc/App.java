@@ -16,38 +16,74 @@ public class App {
         Graph<Integer> graph = new Graph<Integer>();
         Graph<Integer> graph2 = new Graph<Integer>();
         Graph<Integer> graph3 = new Graph<Integer>();
-        System.out.println(graph2.getNodes());
 
-        // edges are added.
-        // Since the graph is bidirectional,
-        // so boolean bidirectional is passed as true.
-        graph.addEdge(0, 1, true);
-        graph.addEdge(0, 4, true);
-        graph.addEdge(1, 2, true);
-        graph.addEdge(1, 3, true);
-        graph.addEdge(1, 4, true);
-        graph.addEdge(2, 3, true);
-        graph.addEdge(3, 4, true);
+
+        System.out.println(allVerteces(graph2));
+
+
+        addNode(graph,0);
+        addNode(graph,3);
+        addEdgeApp(graph,0, 1, true);
+        addEdgeApp(graph,0, 4, true);
+        addEdgeApp(graph,1, 2, true);
+        addEdgeApp(graph,1, 3, true);
+        addEdgeApp(graph,1, 4, true);
+        addEdgeApp(graph,2, 3, true);
+        addEdgeApp(graph,3, 4, true);
 
         // print the graph.
         System.out.println("Graph:\n"
-                + graph.getNodes());
+                + allVerteces(graph));
 
         // gives the no of vertices in the graph.
-        graph.getVertexCount();
+
+        size(graph);
 
         System.out.println(graph.getNeighbour(1));
 
-        graph3.addEdgeWithWeight(0, 1, true, 4);
-        graph3.addEdgeWithWeight(0, 4, true, 3);
-        graph3.addEdgeWithWeight(1, 2, true, 5);
-        graph3.addEdgeWithWeight(1, 3, true, 6);
-        graph3.addEdgeWithWeight(1, 4, true, 7);
-        graph3.addEdgeWithWeight(2, 3, true, 8);
-        graph3.addEdgeWithWeight(3, 4, true ,3);
+        addWeightedEdge(graph3,0, 1, true, 4);
+        addWeightedEdge(graph3,0, 4, true, 3);
+        addWeightedEdge(graph3,1, 2, true, 5);
+        addWeightedEdge(graph3,1, 3, true, 6);
+        addWeightedEdge(graph3,1, 4, true, 7);
+        addWeightedEdge(graph3,2, 3, true, 8);
+        addWeightedEdge(graph3,3, 4, true ,3);
 
 
         System.out.println("Weighted Graph:\n"
-                + graph3.getNodes());
+                + allVerteces(graph3));
+    }
+
+
+    public static boolean addNode(Graph g, int v){
+
+        g.addVertex(v);
+
+        return g.hasVertex(v);
+    }
+    public static String addEdgeApp(Graph g, int s, int d, boolean b){
+
+        g.addEdge(s,d,b);
+
+        return g.getNodes();
+    }
+    public static String addWeightedEdge(Graph g, int s, int d, boolean b, int w){
+
+        g.addEdgeWithWeight(s,d,b, w);
+
+        return g.getNodes();
+    }
+
+    public String showNeighbours(Graph g, int s){
+
+        g.getNeighbour(s);
+
+        return g.getNodes();
+    }
+    public static String allVerteces(Graph g){
+        return g.getNodes();
+    }
+    public static String size(Graph g){
+        return g.getVertexCount();
     }
 }
