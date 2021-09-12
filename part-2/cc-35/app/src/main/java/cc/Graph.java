@@ -7,7 +7,7 @@ public class Graph <T>{
     // We use Hashmap to store the edges in the graph
     private Map<T, List<T>> map = new HashMap<>();
 
-    // This function adds a new vertex/ node to the graph
+
     public void addVertex(T s)
     {
         map.put(s, new LinkedList<T>());
@@ -30,6 +30,23 @@ public class Graph <T>{
             map.get(destination).add(source);
         }
     }
+    // with weight
+    public void addEdgeWithWeight(T source,
+                        T destination,
+                        boolean bidirectional, int weight)
+    {
+
+        if (!map.containsKey(source))
+            addVertex(source);
+
+        if (!map.containsKey(destination))
+            addVertex(destination);
+
+        map.get(source).add((T) (destination+","+ weight));
+        if (bidirectional == true) {
+            map.get(destination).add((T) (source+","+ weight));
+        }
+    }
 
     // This function gives the count of vertices
     public void getVertexCount()
@@ -43,7 +60,9 @@ public class Graph <T>{
     public String getNodes()
     {
         StringBuilder builder = new StringBuilder();
-
+        if (map.size() ==0 ){
+            return null;
+        }
         for (T v : map.keySet()) {
             builder.append(v.toString() + ": ");
             for (T w : map.get(v)) {
@@ -58,8 +77,9 @@ public class Graph <T>{
     // Prints neighbors of a vertex.
     public String getNeighbour(T vertex) {
         StringBuilder builder = new StringBuilder();
-        System.out.println("inside ");
-        System.out.println("vertex = "+ vertex);
+//        System.out.println("inside ");
+//        System.out.println("vertex = "+ vertex);
+
 
         for (T v : map.keySet()) {
           //  System.out.println("inside for");

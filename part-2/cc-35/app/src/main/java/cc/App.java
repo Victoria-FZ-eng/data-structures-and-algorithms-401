@@ -13,31 +13,41 @@ public class App {
 
 
         // Object of graph is created.
-        Graph<Integer> g = new Graph<Integer>();
+        Graph<Integer> graph = new Graph<Integer>();
+        Graph<Integer> graph2 = new Graph<Integer>();
+        Graph<Integer> graph3 = new Graph<Integer>();
+        System.out.println(graph2.getNodes());
 
         // edges are added.
         // Since the graph is bidirectional,
         // so boolean bidirectional is passed as true.
-        g.addEdge(0, 1, true);
-        g.addEdge(0, 4, true);
-        g.addEdge(1, 2, true);
-        g.addEdge(1, 3, true);
-        g.addEdge(1, 4, true);
-        g.addEdge(2, 3, true);
-        g.addEdge(3, 4, true);
+        graph.addEdge(0, 1, true);
+        graph.addEdge(0, 4, true);
+        graph.addEdge(1, 2, true);
+        graph.addEdge(1, 3, true);
+        graph.addEdge(1, 4, true);
+        graph.addEdge(2, 3, true);
+        graph.addEdge(3, 4, true);
 
         // print the graph.
         System.out.println("Graph:\n"
-                + g.getNodes());
+                + graph.getNodes());
 
         // gives the no of vertices in the graph.
-        g.getVertexCount();
+        graph.getVertexCount();
+
+        System.out.println(graph.getNeighbour(1));
+
+        graph3.addEdgeWithWeight(0, 1, true, 4);
+        graph3.addEdgeWithWeight(0, 4, true, 3);
+        graph3.addEdgeWithWeight(1, 2, true, 5);
+        graph3.addEdgeWithWeight(1, 3, true, 6);
+        graph3.addEdgeWithWeight(1, 4, true, 7);
+        graph3.addEdgeWithWeight(2, 3, true, 8);
+        graph3.addEdgeWithWeight(3, 4, true ,3);
 
 
-        System.out.println(g.getNeighbour(1));
-
-
-
-
+        System.out.println("Weighted Graph:\n"
+                + graph3.getNodes());
     }
 }
