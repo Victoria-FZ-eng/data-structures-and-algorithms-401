@@ -20,7 +20,7 @@ class AppTest {
         //Node can be successfully added to the graph
         assertTrue(App.addNode(graph,0));
         //A graph with only one node and edge can be properly returned
-        assertEquals("0:  \n" ,App.allVerteces(graph));
+        assertEquals("0: \n" ,App.allVerteces(graph));
 
         //An edge can be successfully added to the graph
         assertEquals("0: 4 \n" + "4: 0 \n",App.addEdgeApp(graph,0,4,true));
