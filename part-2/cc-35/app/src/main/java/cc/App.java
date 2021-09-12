@@ -39,7 +39,7 @@ public class App {
 
         size(graph);
 
-        System.out.println(graph.getNeighbour(1));
+        System.out.println(showNeighbours(graph,1));
 
         addWeightedEdge(graph3,0, 1, true, 4);
         addWeightedEdge(graph3,0, 4, true, 3);
@@ -74,11 +74,8 @@ public class App {
         return g.getNodes();
     }
 
-    public String showNeighbours(Graph g, int s){
-
-        g.getNeighbour(s);
-
-        return g.getNodes();
+    public static String showNeighbours(Graph g, int s){
+        return g.getNeighbour(s);
     }
     public static String allVerteces(Graph g){
         return g.getNodes();
