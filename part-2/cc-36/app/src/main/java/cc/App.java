@@ -3,12 +3,14 @@
  */
 package cc;
 
+import java.util.List;
+
 public class App {
     public String getGreeting() {
         return "Hello From Code Challenge 36!";
     }
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws Exception {
         System.out.println(new App().getGreeting());
 
         Graph g = new Graph();
@@ -28,5 +30,11 @@ public class App {
         } catch (Exception e) {
             System.out.println(e);
         }
+
+        System.out.println(bftGraph(g,"3"));
+    }
+
+    public static List bftGraph(Graph g, String x) throws Exception {
+        return g.breadthFirstTraversal(x);
     }
 }

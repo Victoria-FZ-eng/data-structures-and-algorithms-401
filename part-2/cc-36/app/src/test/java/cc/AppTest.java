@@ -11,4 +11,21 @@ class AppTest {
         App classUnderTest = new App();
         assertNotNull(classUnderTest.getGreeting(), "app should have a greeting");
     }
+    @Test void bftGraph() throws Exception {
+        Graph g = new Graph();
+        g.addEdge("Pandora", "Arendelle", true);
+        g.addEdge("Arendelle", "Metroville", true);
+        g.addEdge("Arendelle", "Monstroplolis", true);
+        g.addEdge("Monstroplolis", "Metroville", true);
+        g.addEdge("Metroville", "Narnia", true);
+        g.addEdge("Metroville", "Naboo", true);
+        g.addEdge("Monstroplolis", "Naboo", true);
+
+
+
+
+
+           assertEquals("[Pandora, Arendelle, Metroville, Monstroplolis, Narnia, Naboo]",String.valueOf(App.bftGraph(g,"Pandora")));
+
+    }
 }
