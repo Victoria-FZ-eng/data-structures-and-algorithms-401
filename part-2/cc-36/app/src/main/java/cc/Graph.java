@@ -10,6 +10,9 @@ public class Graph<T> {
         if (map.size() ==0 ){
             return null;
         }
+        if (! map.containsKey(vertex)){
+            return null;
+        }
         List<T> nodes = new LinkedList<>();
         Queue<Node> breadth = new Queue<Node>();
         Set<T> visited = new HashSet<>();

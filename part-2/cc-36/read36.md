@@ -2,7 +2,7 @@
 Implement a breadth-first traversal on a graph, using algorithm from thr read.
 
 ## Whiteboard Process
-<!-- Embedded whiteboard image -->
+![graph-breadth-first](graph-breadth-first.png)
 
 ## Approach & Efficiency
 
