@@ -22,9 +22,9 @@ public class App {
 
        // System.out.println(g.getNodes());
 
-        Node head = new Node(3);
+        //Node head = new Node(3);
         try {
-            System.out.println(g.breadthFirstTraversal(head));
+            System.out.println(g.breadthFirstTraversal(3));
         } catch (Exception e) {
             System.out.println(e);
         }

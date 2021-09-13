@@ -6,25 +6,30 @@ public class Graph<T> {
 
     private Map<T, List<T>> map = new HashMap<>();
 
-    public List breadthFirstTraversal(Node vertex) throws Exception {
+    public List breadthFirstTraversal(T vertex) throws Exception {
+        if (map.size() ==0 ){
+            return null;
+        }
         List<T> nodes = new LinkedList<>();
         Queue<Node> breadth = new Queue<Node>();
         Set<T> visited = new HashSet<>();
 
-        breadth.enqueue(vertex);
-        visited.add((T) vertex.data);
+        Node enq = new Node(vertex);
+        breadth.enqueue(enq);
+        visited.add( vertex);
 
         while (!breadth.isEmpty()){
-            Node front = (Node) breadth.dequeue();
+         //   System.out.println("inside while");
+            Node front =  breadth.dequeue();
             nodes.add((T) front.data);
-           // System.out.println(front.data);
+            System.out.println("front = "+front.data);
 
-            for (Object o : getNeighbour((T) vertex.data)) {
-
-                Node neighbour = new Node(o);
-                if(!visited.contains(o)){
+            for (Object o : getNeighbour((T) front.data)) {
+                if (!visited.contains(o)){
+                    System.out.println(o);
                     visited.add((T) o);
-                    breadth.enqueue(neighbour);
+                    Node enq2 = new Node(o);
+                    breadth.enqueue(enq2);
                 }
 
             }
