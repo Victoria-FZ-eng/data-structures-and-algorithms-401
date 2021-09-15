@@ -69,4 +69,6 @@ public class App {
         graph.addEgde(4, 5, 6);
         graph.printGraph();
     }
+
+
 }
