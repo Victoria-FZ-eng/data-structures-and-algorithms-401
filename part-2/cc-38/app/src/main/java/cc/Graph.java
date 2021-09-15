@@ -6,6 +6,46 @@ public class Graph<T> {
 
     private Map<T, List<T>> map = new HashMap<>();
 
+
+    public List depthFirstTraversal(T vertex) throws Exception{
+
+        if (map.size() ==0 ){
+            return null; }
+        if (! map.containsKey(vertex)){
+            return null; }
+
+        List<T> nodes = new LinkedList<>();
+        Stack<Node> depth = new Stack<>();
+        Set<T> visited = new HashSet<>();
+        Node pushNode = new Node(vertex);
+
+        depth.push(pushNode);
+        visited.add( vertex);
+
+        while (!depth.isEmpty()){
+            Node top = depth.peak();
+            System.out.println("top: "+top.data);
+            nodes.add((T) top.data);
+            System.out.println("all neighbours "+getNeighbour((T) top.data));
+            for (Object o : getNeighbour((T) top.data)) {
+                System.out.println("neighbour"+o);
+                if (!visited.contains(o)){
+                    System.out.println("add to visited "+ o);
+                    visited.add((T) o);
+                    Node pushNd = new Node(o);
+                    depth.push(pushNd);
+                   // nodes.add((T) o);
+
+                }
+                else {
+                    System.out.println("else");
+                    depth.pop();
+                }
+                } }
+        System.out.println("Nodes"+nodes);
+        return nodes ;
+    }
+
     public List breadthFirstTraversal(T vertex) throws Exception {
         if (map.size() ==0 ){
             return null; }
@@ -17,18 +57,19 @@ public class Graph<T> {
         Node enq = new Node(vertex);
         breadth.enqueue(enq);
         visited.add( vertex);
+
         while (!breadth.isEmpty()){
             Node front =  breadth.dequeue();
             nodes.add((T) front.data);
-            System.out.println("front = "+front.data);
+            //System.out.println("front = "+front.data);
             for (Object o : getNeighbour((T) front.data)) {
                 if (!visited.contains(o)){
-                    System.out.println(o);
+                   // System.out.println(o);
                     visited.add((T) o);
                     Node enq2 = new Node(o);
                     breadth.enqueue(enq2);
                 } } }
-        System.out.println("nodes: "+nodes);
+       // System.out.println("nodes: "+nodes);
         return nodes;
     }
     public void addVertex(T s)
