@@ -5,6 +5,7 @@ public class Graph<T> {
 
 
     private Map<T, List<T>> map = new HashMap<>();
+    private List<Edge> edges = new ArrayList<>();
 
     public List breadthFirstTraversal(T vertex) throws Exception {
         if (map.size() ==0 ){
@@ -20,10 +21,10 @@ public class Graph<T> {
         while (!breadth.isEmpty()){
             Node front =  breadth.dequeue();
             nodes.add((T) front.data);
-            System.out.println("front = "+front.data);
+            //System.out.println("front = "+front.data);
             for (Object o : getNeighbour((T) front.data)) {
                 if (!visited.contains(o)){
-                    System.out.println(o);
+                  //  System.out.println(o);
                     visited.add((T) o);
                     Node enq2 = new Node(o);
                     breadth.enqueue(enq2);
@@ -37,10 +38,7 @@ public class Graph<T> {
     }
 
 
-    public void addEdge(T source,
-                        T destination,
-                        boolean bidirectional)
-    {
+    public void addEdge(T source, T destination, boolean bidirectional) {
 
         if (!map.containsKey(source))
             addVertex(source);
@@ -52,6 +50,7 @@ public class Graph<T> {
         if (bidirectional == true) {
             map.get(destination).add(source);
         }
+
     }
 
     public void addEdgeWithWeight(T source,
@@ -69,6 +68,8 @@ public class Graph<T> {
         if (bidirectional == true) {
             map.get(destination).add((T) (source+","+ weight));
         }
+        Edge edge = new Edge(source,destination,weight);
+        edges.add(edge);
     }
 
 
@@ -116,4 +117,49 @@ public class Graph<T> {
 
         return n;
     }
+
+    public String  getTripPrice(ArrayList array){
+        System.out.println(array);
+        boolean availability = false;
+        boolean availability2 = false;
+        int wt1=0;
+        int wt2=0;
+        String output = "";
+
+        if(array.size()== 2)
+        {
+            for (Edge edge : edges) {
+               if ((edge.from == array.get(0) && edge.to == array.get(1))|| (edge.from == array.get(1) &&
+                       edge.to == array.get(0))){
+                   return  "True, $"+edge.weight;
+               } else {
+                   output= "False, $0";
+               }
+            }
+        }
+        else
+        {
+            for (Edge edge : edges) {
+                if ((edge.from == array.get(0) && edge.to == array.get(1)) ||(edge.from == array.get(1) &&
+                        edge.to == array.get(0)) ){
+                    availability = true;
+                    wt1 = wt1+ edge.weight;
+                }
+                if((edge.from == array.get(1) && edge.to == array.get(2)) ||(edge.from == array.get(2) &&
+                        edge.to == array.get(1))){
+                    availability2 = true;
+                    wt2 = wt2+ edge.weight;
+                }
+            }
+            boolean finalBool = availability || availability2;
+            int finalWt= wt1+wt2;
+            if(finalBool){
+                return  "True, $"+finalWt;
+            }else{
+                output= "False, $0";
+            }
+        }
+        return output;
+    }
+
 }

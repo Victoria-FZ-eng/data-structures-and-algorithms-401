@@ -21,11 +21,8 @@ class AppTest {
         g.addEdge("Metroville", "Naboo", true);
         g.addEdge("Monstroplolis", "Naboo", true);
 
-
-
-
-
-           assertEquals("[Pandora, Arendelle, Metroville, Monstroplolis, Narnia, Naboo]",String.valueOf(App.bftGraph(g,"Pandora")));
+           assertEquals("[Pandora, Arendelle, Metroville, Monstroplolis, Narnia, Naboo]",
+                   String.valueOf(App.bftGraph(g,"Pandora")));
 
     }
 }
