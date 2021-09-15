@@ -120,7 +120,6 @@ public class Graph<T> {
 
     public String  getTripPrice(ArrayList array){
         System.out.println(array);
-        //ArrayList<String > array = new ArrayList<>();
         boolean availability = false;
         boolean availability2 = false;
         int wt1=0;
@@ -129,14 +128,11 @@ public class Graph<T> {
 
         if(array.size()== 2)
         {
-           // System.out.println("array of two");
             for (Edge edge : edges) {
-               // System.out.println("for");
-               if ((edge.from == array.get(0) && edge.to == array.get(1))|| (edge.from == array.get(1) && edge.to == array.get(0))){
-                 //  System.out.println("if 1");
+               if ((edge.from == array.get(0) && edge.to == array.get(1))|| (edge.from == array.get(1) &&
+                       edge.to == array.get(0))){
                    return  "True, $"+edge.weight;
                } else {
-                 //  System.out.println("else 1");
                    output= "False, $0";
                }
             }
@@ -144,15 +140,16 @@ public class Graph<T> {
         else
         {
             for (Edge edge : edges) {
-                if ((edge.from == array.get(0) && edge.to == array.get(1)) ||(edge.from == array.get(1) && edge.to == array.get(0)) ){
+                if ((edge.from == array.get(0) && edge.to == array.get(1)) ||(edge.from == array.get(1) &&
+                        edge.to == array.get(0)) ){
                     availability = true;
                     wt1 = wt1+ edge.weight;
                 }
-                if((edge.from == array.get(1) && edge.to == array.get(2)) ||(edge.from == array.get(2) && edge.to == array.get(1))){
+                if((edge.from == array.get(1) && edge.to == array.get(2)) ||(edge.from == array.get(2) &&
+                        edge.to == array.get(1))){
                     availability2 = true;
                     wt2 = wt2+ edge.weight;
                 }
-
             }
             boolean finalBool = availability || availability2;
             int finalWt= wt1+wt2;

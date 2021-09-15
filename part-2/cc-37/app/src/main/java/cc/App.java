@@ -58,6 +58,13 @@ public class App {
         arr4.add("Naboo");
         System.out.println(g.getTripPrice(arr4));
 
+        checkAvailabilityAndPrice(g,arr4);
+
+    }
+
+    public static String checkAvailabilityAndPrice(Graph g, ArrayList arr){
+
+        return g.getTripPrice(arr);
     }
 
 
