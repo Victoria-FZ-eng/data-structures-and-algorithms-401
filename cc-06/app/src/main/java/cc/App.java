@@ -22,6 +22,9 @@ public class App {
         list.append(2);
         list.append(63);
 
+        System.out.println(list.viewList()
+        );
+
         list.insertAfter(15,18);
         list.insertBefore(2,9);
        // System.out.println(list.viewList());

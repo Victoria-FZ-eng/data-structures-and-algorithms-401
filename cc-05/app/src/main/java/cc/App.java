@@ -24,10 +24,11 @@ public class App {
         list.insert(80);
         list.insert(14);
         list.insert(4);
+
+        System.out.println(list.getAsString());
         System.out.println(list.includes(14));
         System.out.println(list.includes(5));
         System.out.println(list.includes(52));
-        System.out.println(list.getAsString());
 
         toTestInsert(10,20,30);
         toTestInsertOne(50);

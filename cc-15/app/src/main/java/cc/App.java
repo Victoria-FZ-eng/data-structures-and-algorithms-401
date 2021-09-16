@@ -45,8 +45,20 @@ public class App {
 
         add(1);
         System.out.println("PreOrder=> "+pre(tree,root));
+        System.out.print("PreOrderNew=> ");
+        tree.preOrderNew(root);
+        System.out.println("");
         System.out.println("InOrder=> "+in(tree,root));
+        System.out.print("InOrderNew=> ");
+        tree.inOrderNew(root);
+        System.out.println("");
         System.out.println("PostOrder=> "+post(tree,root));
+        System.out.print("PostOrderNew=> ");
+        tree.postOrderNew(root);
+        System.out.println("");
+        System.out.print("BreadthFirst=> ");
+        tree.breadthFirst(root);
+        System.out.println("");
 
 
     }

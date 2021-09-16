@@ -6,15 +6,17 @@ public class LinkedList {
     Node tail;
 
     public String append(int value){
-        // add Node to the end
-        Node node = new Node(value);
-        if(head == null){
+
+        Node node =new Node(value);
+        Node current  = head;
+        if (head == null){
             head = node;
-            tail = head;
-        }
-        else{
-            tail.next = node;
-            tail = node;
+        }else{
+            while(current.next != null){
+                current = current.next;
+            }
+            node.next=null;
+            current.next=node;
         }
         return "Value Added";
     }

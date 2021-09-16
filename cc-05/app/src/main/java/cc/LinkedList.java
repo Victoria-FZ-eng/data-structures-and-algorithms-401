@@ -36,15 +36,18 @@ public class LinkedList {
     }
 
     public boolean includes(int value){
-        boolean includeOrNot = false;
+
         Node current = head;
         while(current.next != null){
-            if(value == (current.data)){
-                includeOrNot = true;
+            if(current.data == value){
+                return true;
             }
             current = current.next;
         }
-        return includeOrNot;
+        if(current.data == value){
+            return true;
+        }
+        return false;
     }
 
     public String getAsString(){

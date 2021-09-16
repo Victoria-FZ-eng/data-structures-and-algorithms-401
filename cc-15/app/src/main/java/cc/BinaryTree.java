@@ -21,6 +21,64 @@ public class BinaryTree<T> {
     }
 
 
+    public void breadthFirst(Node<T> root) throws Exception {
+        Queue breadth = new Queue();
+        breadth.enqueue(root);
+
+        while(breadth.peak() != null){
+            Node front = (Node) breadth.dequeue();
+            System.out.print(front.data+ " -> ");
+            if (root.left !=null){
+                breadth.enqueue(root.left);
+            }
+            if(root.right != null){
+                breadth.enqueue(root.right);
+            }
+        }
+
+
+
+    }
+
+    public void preOrderNew(Node<T> root){
+
+        if (root != null){
+            System.out.print(root.data + " -> ");
+        }
+        if (root.left != null){
+            preOrderNew(root.left);
+        }
+        if (root.right != null){
+            preOrderNew(root.right);
+        }
+
+    }
+
+    public void inOrderNew(Node<T> root){
+
+        if(root.left != null){
+            inOrderNew(root.left);
+        }
+        System.out.print(root.data+" -> ");
+
+        if (root.right != null){
+            inOrderNew(root.right);
+        }
+    }
+
+    public void postOrderNew(Node<T> root){
+
+        if(root.left != null){
+            postOrderNew(root.left);
+        }
+
+        if (root.right != null){
+            postOrderNew(root.right);
+        }
+        System.out.print(root.data+" -> ");
+    }
+
+
     public ArrayList<Object> preOrder(Node<T> root) throws Exception {
 
         if (root != null) {

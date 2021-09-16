@@ -134,8 +134,8 @@ public class LinkedList {
             nodesArrRev.get(k);
         }catch (IndexOutOfBoundsException e){
             System.out.println("Error, k shouldn't be negative number or more than the nodes' list size");
-            e.hashCode();
-            e.printStackTrace();
+//            e.hashCode();
+//            e.printStackTrace();
         }
         return nodesArrRev.get(k);
     }

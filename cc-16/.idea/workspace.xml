@@ -4,7 +4,57 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ee24fcc7-7031-4ace-a3de-d61172c8e0d0" name="Default Changelist" comment="" />
+    <list default="true" id="ee24fcc7-7031-4ace-a3de-d61172c8e0d0" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../cc-05/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../cc-05/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cc-05/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../cc-05/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cc-05/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../cc-05/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cc-05/app/src/main/java/cc/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/../cc-05/app/src/main/java/cc/App.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cc-05/app/src/main/java/cc/LinkedList.java" beforeDir="false" afterPath="$PROJECT_DIR$/../cc-05/app/src/main/java/cc/LinkedList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cc-06/.gradle/7.1.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../cc-06/.gradle/7.1.1/executionHistory/executionHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cc-06/.gradle/7.1.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../cc-06/.gradle/7.1.1/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cc-06/.gradle/7.1.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../cc-06/.gradle/7.1.1/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cc-06/.gradle/7.1.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../cc-06/.gradle/7.1.1/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cc-06/.gradle/7.1.1/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../cc-06/.gradle/7.1.1/fileHashes/resourceHashesCache.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cc-06/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../cc-06/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cc-06/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../cc-06/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cc-06/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../cc-06/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cc-06/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../cc-06/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cc-06/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../cc-06/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cc-06/app/build/classes/java/main/cc/App.class" beforeDir="false" afterPath="$PROJECT_DIR$/../cc-06/app/build/classes/java/main/cc/App.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cc-06/app/build/classes/java/main/cc/LinkedList.class" beforeDir="false" afterPath="$PROJECT_DIR$/../cc-06/app/build/classes/java/main/cc/LinkedList.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cc-06/app/build/classes/java/main/cc/Node.class" beforeDir="false" afterPath="$PROJECT_DIR$/../cc-06/app/build/classes/java/main/cc/Node.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cc-06/app/build/classes/java/test/cc/AppTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/../cc-06/app/build/classes/java/test/cc/AppTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cc-06/app/build/reports/tests/test/classes/cc.AppTest.html" beforeDir="false" afterPath="$PROJECT_DIR$/../cc-06/app/build/reports/tests/test/classes/cc.AppTest.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cc-06/app/build/reports/tests/test/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../cc-06/app/build/reports/tests/test/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cc-06/app/build/reports/tests/test/packages/cc.html" beforeDir="false" afterPath="$PROJECT_DIR$/../cc-06/app/build/reports/tests/test/packages/cc.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cc-06/app/build/test-results/test/TEST-cc.AppTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../cc-06/app/build/test-results/test/TEST-cc.AppTest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cc-06/app/build/test-results/test/binary/results.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../cc-06/app/build/test-results/test/binary/results.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cc-06/app/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../cc-06/app/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cc-06/app/build/tmp/compileTestJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../cc-06/app/build/tmp/compileTestJava/previous-compilation-data.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cc-06/app/src/main/java/cc/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/../cc-06/app/src/main/java/cc/App.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cc-06/app/src/main/java/cc/LinkedList.java" beforeDir="false" afterPath="$PROJECT_DIR$/../cc-06/app/src/main/java/cc/LinkedList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cc-07/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../cc-07/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cc-07/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../cc-07/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cc-07/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../cc-07/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cc-07/app/src/main/java/cc/LinkedList.java" beforeDir="false" afterPath="$PROJECT_DIR$/../cc-07/app/src/main/java/cc/LinkedList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cc-08/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../cc-08/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cc-08/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../cc-08/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cc-11/stack-queue-pseudo.png:Zone.Identifier" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cc-12/stack-queue-animal-shelter.png:Zone.Identifier" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cc-13/stack-queue-brackets.png:Zone.Identifier" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cc-15/.idea/cc-15.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../cc-15/.idea/cc-15.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cc-15/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../cc-15/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cc-15/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../cc-15/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cc-15/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../cc-15/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cc-15/app/src/main/java/cc/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/../cc-15/app/src/main/java/cc/App.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cc-15/app/src/main/java/cc/BinaryTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/../cc-15/app/src/main/java/cc/BinaryTree.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tree-max.png:Zone.Identifier" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cc-17/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../cc-17/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cc-17/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../cc-17/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cc-17/ex.png:Zone.Identifier" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cc-17/tree-breadth-first.png:Zone.Identifier" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../part-2/cc-26/insertion-sort.png:Zone.Identifier" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -26,17 +76,7 @@
         </task>
         <projects_view>
           <tree_state>
-            <expand>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="cc-16" type="f1a62948:ProjectNode" />
-              </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="cc-16" type="f1a62948:ProjectNode" />
-                <item name="Run Configurations" type="7b0102dc:RunConfigurationsNode" />
-              </path>
-            </expand>
+            <expand />
             <select />
           </tree_state>
         </projects_view>
