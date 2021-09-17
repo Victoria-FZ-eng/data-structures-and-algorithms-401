@@ -1,9 +1,5 @@
 package cc;
 
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.List;
-
 public class BinarySearchTree extends BinaryTree{
 
     public void addBinarySearchTree(int value,Node<Integer> rootNode){
@@ -45,20 +41,28 @@ public class BinarySearchTree extends BinaryTree{
         }
         return contain;
     }
-    List<Integer> maxVals = new ArrayList<>();
-    public Object maxValue(Node rootNode){
-        Node max = rootNode;
-      //  System.out.println("before if "+rootNode.data);
-        if(rootNode.right != null){
-            max = rootNode.right;
-            maxVals.add((Integer) max.data);
-          //  System.out.println("inside if "+max.data);
-            maxValue(rootNode.right);
+//    List<Integer> maxVals = new ArrayList<>();
+//    public Object maxValue(Node rootNode){
+//        Node max = rootNode;
+//      //  System.out.println("before if "+rootNode.data);
+//        if(rootNode.right != null){
+//            max = rootNode.right;
+//            maxVals.add((Integer) max.data);
+//          //  System.out.println("inside if "+max.data);
+//            maxValue(rootNode.right);
+//        }
+//       // System.out.println(maxVals);
+//        return Collections.max(maxVals);
+//    }
+
+public int maxValue (Node rootNode){
+    int max=0;
+        while (rootNode.right != null){
+            max = (int) rootNode.right.data;
+          //  System.out.println( rootNode.data);
+            rootNode= rootNode.right;
         }
-       // System.out.println(maxVals);
-        return Collections.max(maxVals);
-    }
-
-
+        return max;
+}
 
 }
