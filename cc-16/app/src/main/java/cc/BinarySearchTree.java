@@ -64,5 +64,32 @@ public int maxValue (Node rootNode){
         }
         return max;
 }
+public int minValue (Node rootNode){
+    int min=0;
+        while (rootNode.left != null){
+            min = (int) rootNode.left.data;
+          //  System.out.println( rootNode.data);
+            rootNode= rootNode.left;
+        }
+        return min;
+}
+public int secMinValue (Node rootNode){
+    int secMin=0;
+        while (rootNode.left.left != null){
+            secMin = (int) rootNode.left.data;
+          //  System.out.println( rootNode.data);
+            rootNode= rootNode.left;
+        }
+        return secMin;
+}
+public int secMaxValue (Node rootNode){
+    int secMax=0;
+        while (rootNode.right.right != null){
+            secMax = (int) rootNode.right.data;
+          //  System.out.println( rootNode.data);
+            rootNode= rootNode.right;
+        }
+        return secMax;
+}
 
 }

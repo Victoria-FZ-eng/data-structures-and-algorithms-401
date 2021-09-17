@@ -5,13 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ee24fcc7-7031-4ace-a3de-d61172c8e0d0" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/cc-16.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../cc-11/stack-queue-pseudo.png:Zone.Identifier" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../cc-12/stack-queue-animal-shelter.png:Zone.Identifier" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../cc-13/stack-queue-brackets.png:Zone.Identifier" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/cc/BinarySearchTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/cc/BinarySearchTree.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tree-max.png:Zone.Identifier" beforeDir="false" />
@@ -54,6 +50,13 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/app/src/main/java/cc/BinarySearchTree.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/app/src/main/java/cc/App.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/app/src/test/java/cc/AppTest.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/app/src/main/java/cc/BinaryTree.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/app/src/main/java/cc/Node.java" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="ProjectId" id="1wmDt8AMHi6HZkg34CNnH0Y9mV4" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
