@@ -83,5 +83,43 @@ public class BinaryTree<T> {
         return postOrderList;
     }
 
+    public void preOrderNew(Node<T> root){
+
+        if (root != null){
+            System.out.print(root.data + " -> ");
+        }
+        if (root.left != null){
+            preOrderNew(root.left);
+        }
+        if (root.right != null){
+            preOrderNew(root.right);
+        }
+
+    }
+
+    public void inOrderNew(Node<T> root){
+
+        if(root.left != null){
+            inOrderNew(root.left);
+        }
+        System.out.print(root.data+" -> ");
+
+        if (root.right != null){
+            inOrderNew(root.right);
+        }
+    }
+
+    public void postOrderNew(Node<T> root){
+
+        if(root.left != null){
+            postOrderNew(root.left);
+        }
+
+        if (root.right != null){
+            postOrderNew(root.right);
+        }
+        System.out.print(root.data+" -> ");
+    }
+
 
 }

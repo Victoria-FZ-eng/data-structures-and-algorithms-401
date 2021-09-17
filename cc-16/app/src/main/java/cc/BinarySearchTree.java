@@ -92,4 +92,35 @@ public int secMaxValue (Node rootNode){
         return secMax;
 }
 
+    int sum=0;
+
+    public int sumOfLeaves(Node root){
+
+        if (root != null){
+            sum=sum +(int) root.data;
+        }
+        if(root.left != null){
+            sumOfLeaves(root.left);
+        }
+        if(root.right != null){
+            sumOfLeaves(root.right);
+        }
+        return sum;
+    }
+
+    int count = 0;
+    public int numberOfLeaves(Node root){
+        if (root != null){
+            count++;
+        }
+        if(root.left != null){
+            numberOfLeaves(root.left);
+        }
+        if(root.right != null){
+            numberOfLeaves(root.right);
+        }
+        return count;
+    }
+
+
 }

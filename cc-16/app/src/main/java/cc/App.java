@@ -29,6 +29,9 @@ public class App {
 
         // System.out.println(tree.maxValue(root));
         getMax(tree,root);
+
+        System.out.println("sum: "+tree.sumOfLeaves(root));
+        System.out.println("count: "+tree.numberOfLeaves(root));
     }
 
     public static Integer getMax(BinarySearchTree t, Node r){
