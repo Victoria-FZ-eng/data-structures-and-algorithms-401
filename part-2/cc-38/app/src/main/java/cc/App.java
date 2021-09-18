@@ -3,6 +3,9 @@
  */
 package cc;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class App {
     public String getGreeting() {
         return "Hello From Code Challenge 38!";
@@ -24,15 +27,21 @@ public class App {
         //Node head = new Node(3);
         try {
             System.out.println("depth : "+g.depthFirstTraversal(1));
-            System.out.println("breadth : "+g.breadthFirstTraversal(3));
         } catch (Exception e) {
             System.out.println(e);
         }
 
+
+        bftGraph(g,1);
 //        System.out.println("Neighour: "+g.getNeighbour(2));
 //        System.out.println("Neighour: "+g.getNeighbour(3));
 //        System.out.println("Neighour: "+g.getNeighbour(4));
 //        System.out.println("Neighour: "+g.getNeighbour(5));
        // System.out.println(g.dfsIterative(3));
+    }
+
+    public static List bftGraph(Graph g, int r) throws Exception {
+
+        return g.depthFirstTraversal(r);
     }
 }

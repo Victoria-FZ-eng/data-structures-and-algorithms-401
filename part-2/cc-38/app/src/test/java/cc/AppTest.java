@@ -11,4 +11,15 @@ class AppTest {
         App classUnderTest = new App();
         assertNotNull(classUnderTest.getGreeting(), "app should have a greeting");
     }
+    @Test void checkDFT() throws Exception {
+
+        Graph g = new Graph();
+        g.addEdge(1, 2, true);
+        g.addEdge(2, 3, true);
+        g.addEdge(2, 4, true);
+        g.addEdge(3, 4, true);
+        g.addEdge(3, 5, true);
+        g.addEdge(5, 6, true);
+        assertEquals("[1, 2, 3, 4, 5, 6]",String.valueOf(App.bftGraph(g,1)));
+    }
 }
