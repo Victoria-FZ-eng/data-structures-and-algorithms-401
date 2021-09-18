@@ -24,7 +24,7 @@ public class App {
 
         //Node head = new Node(3);
         try {
-            System.out.println("depth : "+g.depthFirstTraversal(3));
+            System.out.println("depth : "+g.depthFirstTraversal(1));
             System.out.println("breadth : "+g.breadthFirstTraversal(3));
         } catch (Exception e) {
             System.out.println(e);
