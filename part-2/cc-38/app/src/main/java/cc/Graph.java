@@ -17,39 +17,29 @@ public class Graph<T> {
         List<T> nodes = new LinkedList<>();
         Stack<Node> depth = new Stack<>();
         Set<T> visited = new HashSet<>();
-        /// 1- push root node into stack
+
         Node pushNode = new Node(vertex);
+
         depth.push(pushNode);
-
         visited.add( vertex);
-        //2- start w while loop , while stack is not empty
+        nodes.add(vertex);
+
         while (!depth.isEmpty()){
-
-            //3- peek at the top node of the stack
             Node top = depth.peak();
-            System.out.println("peek top: "+top.data);
-            // 4- If the top node has unvisited children, mark the top node as visited,
-            // and then Push any unvisited children back into the stack.
-
-            System.out.println("children of peeked top : "+getNeighbour((T) top.data));
-
             for (Object o : getNeighbour((T) top.data)) {
-                System.out.println("neighbour"+o);
                 if (!visited.contains(o)){
-                    System.out.println("add to visited "+ o);
                     visited.add((T) o);
                     nodes.add((T) o);
                     Node pushNd = new Node(o);
                     depth.push(pushNd);
-                   // nodes.add((T) o);
-
                 }
-                else {
-                    System.out.println("else");
-                    depth.pop();
+                else  {
+                    if (top == depth.peak() ){
+                    Node poped =depth.pop();
+                   }
                 }
-                } }
-        System.out.println("Nodes"+nodes);
+                }
+         }
         return nodes ;
     }
 

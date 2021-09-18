@@ -17,10 +17,9 @@ public class App {
         g.addEdge(2, 4, true);
         g.addEdge(3, 4, true);
         g.addEdge(3, 5, true);
-        g.addEdge(5, 3, true);
         g.addEdge(5, 6, true);
 
-        // System.out.println(g.getNodes());
+         System.out.println("Graph Listed \n"+g.getNodes());
 
         //Node head = new Node(3);
         try {
