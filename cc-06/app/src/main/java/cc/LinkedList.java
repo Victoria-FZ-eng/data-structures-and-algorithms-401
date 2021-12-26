@@ -8,6 +8,19 @@ public class LinkedList {
     public String append(int value){
         // add Node to the end
         Node node = new Node(value);
+        
+        
+//        if(head == null){
+//            head = node;
+//        }
+//        Node current = head;
+//        while (current.next != null){
+//            current= current.next;
+//        }
+
+//            current.next = node;
+//            node.next=null;
+        
         if(head == null){
             head = node;
             tail = head;
