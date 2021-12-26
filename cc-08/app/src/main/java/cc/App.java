@@ -29,8 +29,16 @@ public class App {
 //        list02.append(10);
 
         System.out.println(zipLists(list01,list02));
+        
+          System.out.println("Zipping second way => ");
+        System.out.println(zipp02(list01,list02));
     }
 
+     public static String zipp02 (LinkedList l1, LinkedList l2){
+        LinkedList list = new LinkedList();
+
+        return list.zip(l1,l2).getAsString();
+    }
 
     public static String zipLists(LinkedList l1, LinkedList l2){
 
