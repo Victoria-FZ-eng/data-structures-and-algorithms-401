@@ -56,5 +56,30 @@ public class LinkedList {
     //---------------------------------------------------------------------------------------
 
 
+    public  LinkedList zip(LinkedList l01, LinkedList l02){
+        LinkedList newlist = new LinkedList();
+        Node curr01 = l01.head;
+        Node curr02 = l02.head;
+
+        while (curr01.next != null || curr02.next != null){
+
+             if (curr01 !=null){
+                 newlist.append(curr01.data);
+                 curr01=curr01.next;
+
+             }if (curr02 !=null){
+                newlist.append(curr02.data);
+                 curr02=curr02.next;
+             }
+
+        }
+        if (curr01!=null){
+            newlist.append(curr01.data);
+        }
+        if(curr02!=null){
+            newlist.append(curr02.data);
+        }
+   return newlist;
+    }
 
 }
